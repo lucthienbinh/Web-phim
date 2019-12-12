@@ -67,16 +67,25 @@
         padding-right: 2px;
     }
 
-    .title-mod{
-        -webkit-webkit: boder radious 10;
-        -moz-webkit: boder radious 10;
-        -ms-webkit: boder radious 10;
-        -o-webkit: boder radious 10;
-        border-radius: 10px;
+    .title{
         display: flex;
         justify-content: center;
-        padding-top: 4px;
-        padding-bottom: 4px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+    .title-background{
+        position: relative;
+        border-radius: 32px;
+        background: #434345;
+        height: 24px;
+    }
+
+    .title-text{
+        position: absolute;
+        color: #FFC700;
+        font-size: 14px;
+        font-weight: 500;
     }
 }
 
@@ -138,11 +147,25 @@
         padding-right: 2px;
     }
 
-    .title-mod{
+    .title{
         display: flex;
         justify-content: center;
         padding-top: 4px;
         padding-bottom: 4px;
+    }
+
+    .title-background{
+        position: relative;
+        border-radius: 32px;
+        background: #434345;
+        height: 26px;
+    }
+
+    .title-text{
+        position: absolute;
+        color: #FFC700;
+        font-size: 16px;
+        font-weight: 500;
     }
  }
 
@@ -205,16 +228,23 @@
     }
 
     .title{
-        position: relative;
-        left: 50%;
-        -webkit-webkit: boder radious 10;
-        -moz-webkit: boder radious 10;
-        -ms-webkit: boder radious 10;
-        -o-webkit: boder radious 10;
-        border-radius: 50px;
-        background: #434345;
-        width: 100px;
+        display: flex;
+        justify-content: center;
         padding-top: 6px;
         padding-bottom: 6px;
+    }
+
+    .title-background{
+        position: relative;
+        border-radius: 32px;
+        background: #434345;
+        height: 30px;
+    }
+
+    .title-text{
+        position: absolute;
+        color: #FFC700;
+        font-size: 20px;
+        font-weight: 500;
     }
 }
