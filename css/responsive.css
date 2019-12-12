@@ -247,4 +247,69 @@
         font-size: 20px;
         font-weight: 500;
     }
+
+    button {
+        background-color: Transparent;
+        background-repeat:no-repeat;
+        border: none;
+        cursor:pointer;
+        overflow: hidden;
+        outline:none;
+        padding: 0px;
+    }
+
+    .filter{
+        display: flex;
+        justify-content: center;
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+
+    .filter-toprow{
+        padding-top: 4px;
+    }
+
+    .filter-bottomrow{
+        padding-bottom: 4px;
+    }
+
+    .filter-background{
+        position: relative;
+        border-radius: 32px;
+        background: #434345;
+        height: 22px;
+        width: 140px;
+        cursor: pointer;
+    }
+
+    .filter-text{
+        position: absolute;
+        color: #FFC700;
+        font-size: 16px;
+        font-weight: 500;
+        top:2px;
+    }
+
+    .filter-search{
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 4px;
+    }
+
+    .filter-search-background{
+        position: relative;
+        border-radius: 32px;
+        background: #A0A0A0;
+        height: 40px;
+        width: 300px;
+    }
+
+    .filter-search-text{
+        position: absolute;
+        color: #FFC700;
+        font-size: 16px;
+        font-weight: 500;
+        top:2px;
+    }
 }
