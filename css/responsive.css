@@ -192,7 +192,7 @@
     .board-top {
         height: 30px;
         background-color: rgba(0,0,0,0.5);
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 500;
         color: white;
         text-align: center;
@@ -206,7 +206,7 @@
     .board-bottom {
         height: 30px;
         background-color: rgba(0,0,0,0.5);
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 500;
         color: white;
         text-align: center;
@@ -238,13 +238,13 @@
         position: relative;
         border-radius: 32px;
         background: #434345;
-        height: 30px;
+        height: 27px;
     }
 
     .title-text{
         position: absolute;
-        color: #FFC700;
-        font-size: 20px;
+        color:#FFE600;
+        font-size: 18px;
         font-weight: 500;
     }
 
@@ -265,18 +265,15 @@
         padding-bottom: 4px;
     }
 
-    .filter-toprow{
+    .filter-row{
         padding-top: 4px;
-    }
-
-    .filter-bottomrow{
         padding-bottom: 4px;
     }
 
     .filter-background{
         position: relative;
         border-radius: 32px;
-        background: #434345;
+        background: #434345; 
         height: 22px;
         width: 140px;
         cursor: pointer;
@@ -284,7 +281,7 @@
 
     .filter-text{
         position: absolute;
-        color: #FFC700;
+        color: #FFE600;
         font-size: 16px;
         font-weight: 500;
         top:2px;
@@ -293,16 +290,15 @@
     .filter-search{
         display: flex;
         justify-content: center;
-        padding-top: 10px;
-        padding-bottom: 4px;
+        padding-top: 15px;
     }
 
     .filter-search-background{
         position: relative;
         border-radius: 32px;
         background: #A0A0A0;
-        height: 40px;
-        width: 300px;
+        height: 28px;
+        width: 235px;
     }
 
     .filter-search-text{
@@ -311,5 +307,59 @@
         font-size: 16px;
         font-weight: 500;
         top:2px;
+    }
+
+    .button{
+        display: flex;
+        justify-content: center;
+        padding-top: 12px;
+    }
+
+    .button-background{
+        position: relative;
+        border-radius: 50px;
+        background: #434345;
+        height: 35px;
+        width: 100px;
+    }
+
+    .button-text{
+        position: absolute;
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 650;
+        top: 33%;
+    }
+
+    .button-row{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .sort-group {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 15px;
+    }
+
+    .sort-button {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sort-button-background{
+        position: relative;
+        border-radius: 50px;
+        background: #736D68;
+        height: 35px;
+        width: 100px;
+    }
+
+    .sort-button-text{
+        position: absolute;
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 650;
+        top: 33%;
     }
 }
