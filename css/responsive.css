@@ -519,4 +519,20 @@
     .film-list-space {
         padding: 3px;
     }
+
+    .film-card {
+        padding: 6px;
+    }
+
+    .film-card-name {
+        height: 30px;
+        background-color: rgba(0,100,0,0.5);
+        font-size: 20px;
+        font-weight: 500;
+        color: white;
+        text-align: center;
+        line-height: 30px;
+        padding: 0px;
+        margin: 0px;
+    }
 }
