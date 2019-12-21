@@ -18,7 +18,7 @@
         display: inline-block;
         line-height: inherit;
         white-space: nowrap;
-        font-weight: 500;
+        font-weight: 450;
         text-align: center;
     }
 
@@ -33,7 +33,6 @@
         height: 16px;
         background-color: rgba(0,0,0,0.5);
         font-size: 14px;
-        font-weight: 500;
         color: white;
         text-align: center;
         line-height: 16px;
@@ -47,7 +46,6 @@
         height: 16px;
         background-color: rgba(0,0,0,0.5);
         font-size: 12px;
-        font-weight: 450;
         color: white;
         text-align: center;
         line-height: 16px;
@@ -85,7 +83,6 @@
         position: absolute;
         color: #FFC700;
         font-size: 14px;
-        font-weight: 500;
     }
 
     .filter-category-group{
@@ -99,7 +96,6 @@
 
     .filter-category{
         font-size: 12px;
-        font-weight: 300;
         color: #FFE300;
         letter-spacing: 1px;
         line-height: 15px;
@@ -148,7 +144,6 @@
 
     .filter-button {
         font-size: 16px;
-        font-weight: 650;
         color: #FFE300;
         letter-spacing: 1px;
         line-height: 15px;
@@ -179,7 +174,6 @@
 
     .sort-button{
         font-size: 16px;
-        font-weight: 300;
         color: #ffffff;
         letter-spacing: 1px;
         line-height: 13px;
@@ -205,7 +199,7 @@
         display: inline-block;
         line-height: inherit;
         white-space: nowrap;
-        font-weight: 500;
+        font-weight: 450;
         text-align: center;
     }
 
@@ -217,7 +211,6 @@
         height: 20px;
         background-color: rgba(0,0,0,0.5);
         font-size: 14px;
-        font-weight: 500;
         color: white;
         text-align: center;
         line-height: 20px;
@@ -231,7 +224,6 @@
         height: 20px;
         background-color: rgba(0,0,0,0.5);
         font-size: 14px;
-        font-weight: 450;
         color: white;
         text-align: center;
         line-height: 20px;
@@ -269,7 +261,6 @@
         position: absolute;
         color: #FFC700;
         font-size: 16px;
-        font-weight: 500;
     }
 
     .filter-category-group{
@@ -283,7 +274,6 @@
 
     .filter-category{
         font-size: 16px;
-        font-weight: 300;
         color: #FFE300;
         letter-spacing: 1px;
         line-height: 13px;
@@ -332,7 +322,6 @@
 
     .filter-button {
         font-size: 16px;
-        font-weight: 650;
         color: white;
         letter-spacing: 1px;
         line-height: 15px;
@@ -363,7 +352,6 @@
 
     .sort-button{
         font-size: 16px;
-        font-weight: 300;
         color: #ffffff;
         letter-spacing: 1px;
         line-height: 13px;
@@ -384,13 +372,13 @@
 @media (min-width: 768px) {  
     .homepagebuttonfont{
         color: #FFE300;
-        font-size: 24px;
+        font-size: 22px;
         display: inline-block;
         line-height: inherit;
         white-space: nowrap;
-        font-weight: 500;
         text-align: center;
-        padding-right: 170px;
+        font-weight: 500;
+        padding-right: 200px;
     }
     
     .dt-view{
@@ -398,62 +386,79 @@
     }
 
     .board-top {
-        height: 30px;
-        background-color: rgba(0,0,0,0.5);
-        font-size: 16px;
-        font-weight: 500;
+        height: 25px;
+        background-color: rgba(0,0,0,0.4);
         color: white;
         text-align: center;
-        line-height: 30px;
+        line-height: 25px;
+        letter-spacing: 0.5px;
         left: 3px;
         right: 3px;
         position: absolute;
         top: 0px;
+        font-size: 16px;
     }
 
     .board-bottom {
-        height: 30px;
+        height: 24px;
         background-color: rgba(0,0,0,0.5);
         font-size: 16px;
-        font-weight: 500;
         color: white;
         text-align: center;
-        line-height: 30px;
+        line-height: 24px;
         left: 3px;
         right: 3px;
         position: absolute;
         bottom: 0px;
     }
 
+    .film-list-header {
+        padding: 8px 0px 8px 8px;
+        display:flex;
+        justify-content: flex-end;
+    }
+
+    .btn-update {
+        padding: 4px 16px 4px 16px;
+        font-size: 16px;
+        color:black;
+        background-color: #ffff59;
+        letter-spacing: 1px;
+        line-height: 18px;
+        border-radius: 15px;
+        border: none;
+        transition: all 0.3s ease 0s;
+    }
+      
+    .btn-update:hover {
+        color: #FFF;
+        background: #ab5505;
+    }
+
+    .title{
+        color:#844204;
+        font-size: 24px;
+        letter-spacing: 0.4px;
+    }
+    .title-info{
+        padding: 4px 16px 4px 16px;
+        color:#873800;
+        font-size: 16px;    
+    }
+
+    .round-border {
+        border-radius: 4px;
+    }
+
     .film-list{
         padding-left: 3px;
         padding-right: 3px;
+        padding-bottom: 6px;
     }
       
     .film-info{
         padding-left: 3px;
         padding-right: 3px;
-    }
-
-    .title{
-        display: flex;
-        justify-content: center;
-        padding-top: 6px;
-        padding-bottom: 6px;
-    }
-
-    .title-background{
-        position: relative;
-        border-radius: 50px;
-        background: rgb(74, 74, 74);
-        height: 28px;
-    }
-
-    .title-text{
-        position: absolute;
-        color:#FFE300;
-        font-size: 18px;
-        font-weight: 500;
     }
 
     .filter-category-group{
@@ -467,7 +472,6 @@
 
     .filter-category{
         font-size: 18px;
-        font-weight: 300;
         color: #FFE300;
         letter-spacing: 1px;
         line-height: 13px;
@@ -517,7 +521,6 @@
 
     .filter-button {
         font-size: 18px;
-        font-weight: 650;
         color: white;
         letter-spacing: 1px;
         line-height: 12px;
@@ -548,7 +551,6 @@
 
     .sort-button{
         font-size: 16px;
-        font-weight: 300;
         color: #ffffff;
         letter-spacing: 1px;
         line-height: 13px;
@@ -576,7 +578,6 @@
         height: 30px;
         background-color: rgba(0,100,0,0.5);
         font-size: 20px;
-        font-weight: 500;
         color: white;
         text-align: center;
         line-height: 30px;
@@ -584,3 +585,7 @@
         margin: 0px;
     }
 }
+/* 
+var dt = new Date();
+var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+document.write(time); */

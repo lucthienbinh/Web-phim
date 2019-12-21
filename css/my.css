@@ -6,14 +6,13 @@
 
 .nav-link-mod{
     color: #FFF6F6;
-    font-size: 18px;
-    font-weight: 450;
+    font-size: 16px;
     display: block;
 }
 
 .nav-link-mod:hover, .nav-link-mod:focus {
     text-decoration: none;
-    color: yellow;
+    color: yellow;  
 }
 
 .footer-text {
@@ -22,4 +21,15 @@
   color: white;
   text-align: center;
   line-height: 25px;
+}
+
+.body-bg {
+  background-color: #e9ebee;
+  padding-top: 0.1px;
+  padding-bottom: 0.1px;
+}
+
+.film-list-row-space {
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
