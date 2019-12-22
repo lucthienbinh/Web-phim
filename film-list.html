@@ -10,7 +10,7 @@
     </head>
     <body>
         <div class="header-page">
-            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #4F4F4F;">
+            <nav class="navbar navbar-expand-lg navbar-bg-color">
                 <div class="container">
                     <!-- <a class="navbar-brand homepagefont" href="#">VIET PHIM ONLINE</a> -->
                     <a class="homepagebuttonfont" href="#">VIET PHIM ONLINE</a>
@@ -19,19 +19,19 @@
                     </button>
                     
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item col-md-4">
+                        <ul class="navbar-nav mr-auto ">
+                            <li class="nav-item col-md-5 text-center">
                                 <a class="nav-link-mod" href="index.html">Home Page <span class="sr-only">(current)</span></a>
                             </li>
-                            <li class="nav-item active col-md-5"> 
+                            <li class="nav-item col-md-6 text-center"> 
                                 <a class="nav-link-mod" href="film-list.html">All Categories</a>
                             </li>
-                            <li class="nav-item col-md-4">
+                            <li class="nav-item col-md-auto text-center">
                                 <a class="nav-link-mod" href="actor-list.html">All Actors</a>
                             </li>
                         </ul>
                         <ul class="navbar-nav">
-                            <li class="nav-item col-md-5">
+                            <li class="nav-item col-md-auto">
                                 <a class="nav-link-mod" href="#"><img src="icon/notifications-24px.svg" /></a>
                             </li>
                             <li class="nav-item dropdown " >
@@ -48,296 +48,134 @@
                     </div>
                 </div>
             </nav>
-        </div>    
-        <div class="body-page" style="background-color:#cccbcb;" >
-            <div class="container" >
-                <div class="row">
-                    <div class="col-md-9 filter-category-group" style="background:#bababa;">
-                        <div class="filter-category-row">
-                            <button type="button" class="btn filter-category">Action movie</button>
-                            <button type="button" class="btn filter-category">Love movie</button>
-                            <button type="button" class="btn filter-category">Horror movie</button>
-                            <button type="button" class="btn filter-category">Kids movie</button>
-                            <button type="button" class="btn filter-category dt-view">Fiction movie</button>
-                        </div>
-                        <div class="filter-category-row">
-                            <button type="button" class="btn filter-category">Action movie</button>
-                            <button type="button" class="btn filter-category">Love movie</button>
-                            <button type="button" class="btn filter-category">Horror movie</button>
-                            <button type="button" class="btn filter-category">Kids movie</button>
-                            <button type="button" class="btn filter-category dt-view">Fiction movie</button>
-                        </div>
-                        <div class="filter-category-row">
-                            <button type="button" class="btn filter-category">Action movie</button>
-                            <button type="button" class="btn filter-category">Love movie</button>
-                            <button type="button" class="btn filter-category">Horror movie</button>
-                            <button type="button" class="btn filter-category">Kids movie</button>
-                            <button type="button" class="btn filter-category dt-view">Fiction movie</button>
-                        </div>
-                    </div>
-                    <div class="col-md-3" style="background: #636363;">
-                        <div class="filter-input">
-                            
-                            <input type="text" class="filter-search-box"
-                            placeholder="      Film informaton ...">
-                            <img class="filter-input-icon" src="icon/search-24px.svg" />
-                        </div>
-                        <div class="filter-button-row">
-                            <button id="buttonFilter" type="button"
-                                class="btn filter-button"
-                                onclick="location.href='film-list-result.html'" >Filter
-                            </button>
-                            <button id="buttonAll" type="button" class="btn filter-button"
-                            onclick="location.href='film-list-result.html'">All</button>
-                        </div>
-                    </div>
-                </div>
-               
+        </div>      
+        <div class="body-page body-bg" >
+            <div class="container film-list-row-space text-center"  >
+                <div class="title">Search movie with filter</div>
             </div>
-            <div class="container" style="background-color:#fffdad;" >
-                <div class="title">
-                    <div class="title-background" style="width: 170px;"></div>
-                    <div class="title-text">Horror movie</div>
+            <div class="container filter-category-row-space filter-bg-color" >
+                <div class="filter-header">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Name</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default"
+                        placeholder="Type in name of film ... ">
+                        
+                    </div>
+                    <!-- <button type="button" class="btn filter-category col dt-view col-md-auto" style="background-color: red;">Search by filter</button>
+                        <button type="button" class="btn filter-category col dt-view col-md-auto" style="background-color: red;">Search all</button> -->
                 </div>
-                <div class="film-list row" >
-                    <div class="film-info col">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim2.png" >
-                        </div> 
-                        <div class="board-bottom">1.000.000 view</div>  
+                <div class="filter-body">
+                    <div class="row">
+                        <button type="button" class="btn filter-category col">Action</button>
+                        <button type="button" class="btn filter-category col">Amateur </button>
+                        <button type="button" class="btn filter-category col">Anthology</button>
+                        <button type="button" class="btn filter-category col">Bad boy</button>
+                        <button type="button" class="btn filter-category col">Bad girl</button>
+                        <button type="button" class="btn filter-category col dt-view">Cartoon </button>
+                        <button type="button" class="btn filter-category col dt-view">Comedy</button>
                     </div>
-                    <div class="film-info col">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim1.png" >
-                        </div> 
-                        <div class="board-bottom">1.000.000 view</div>  
+                    <div class="row">
+                        <button type="button" class="btn filter-category col">Educational</button>
+                        <button type="button" class="btn filter-category col">Fantasy</button>
+                        <button type="button" class="btn filter-category col">Fiction</button>
+                        <button type="button" class="btn filter-category col">Heritage</button>
+                        <button type="button" class="btn filter-category col">Historical</button>
+                        <button type="button" class="btn filter-category col dt-view">Hoods</button>
+                        <button type="button" class="btn filter-category col dt-view">Horror</button>
                     </div>
-                    <div class="film-info col">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim1.png" >
-                        </div> 
-                        <div class="board-bottom">1.000.000 view</div>  
+                    <div class="row">
+                        <button type="button" class="btn filter-category col">Interstitial</button>
+                        <button type="button" class="btn filter-category col">Japanese</button>
+                        <button type="button" class="btn filter-category col">Kids</button>
+                        <button type="button" class="btn filter-category col">Korean</button>
+                        <button type="button" class="btn filter-category col">Love</button>
+                        <button type="button" class="btn filter-category col dt-view">Musicarello</button>
+                        <button type="button" class="btn filter-category col dt-view">Rape</button>
                     </div>
-                    <div class="film-info col dt-view">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim1.png" >
-                        </div> 
-                        <div class="board-bottom">1.000.000 view</div>  
-                    </div>
-                    <div class="film-info col dt-view">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim1.png" >
-                        </div> 
-                        <div class="board-bottom">1.000.000 view</div>  
-                    </div>
-                    <div class="film-info col dt-view">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim1.png" >
-                        </div> 
-                        <div class="board-bottom">1.000.000 view</div>  
-                    </div>
-                    <div class="film-info col dt-view">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim1.png" >
-                        </div> 
-                        <div class="board-bottom">1.000.000 view</div>  
-                    </div>
-                </div>
-                <div class="title">
-                    <div class="title-background" style="width: 170px;"></div>
-                    <div class="title-text">Fiction movie</div>
-                </div>
-                <div class="film-list row" >
-                    <div class="film-info col">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim2.png" >
-                        </div> 
-                        <div class="board-bottom">1.000.000 view</div>  
-                    </div>
-                    <div class="film-info col">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim1.png" >
-                        </div> 
-                        <div class="board-bottom">1.000.000 view</div>  
-                    </div>
-                    <div class="film-info col">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim1.png" >
-                        </div> 
-                        <div class="board-bottom">1.000.000 view</div>  
-                    </div>
-                    <div class="film-info col dt-view">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim1.png" >
-                        </div> 
-                        <div class="board-bottom">1.000.000 view</div>  
-                    </div>
-                    <div class="film-info col dt-view">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim1.png" >
-                        </div> 
-                        <div class="board-bottom">1.000.000 view</div>  
-                    </div>
-                    <div class="film-info col dt-view">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim1.png" >
-                        </div> 
-                        <div class="board-bottom">1.000.000 view</div>  
-                    </div>
-                    <div class="film-info col dt-view">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim1.png" >
-                        </div> 
-                        <div class="board-bottom">1.000.000 view</div>  
+                    <div class="row">
+                        <button type="button" class="btn filter-category col">Revenge</button>
+                        <button type="button" class="btn filter-category col">Real time</button>
+                        <button type="button" class="btn filter-category col">Reality</button>
+                        <button type="button" class="btn filter-category col">Retrospective</button>
+                        <button type="button" class="btn filter-category col">Romance</button>
+                        <button type="button" class="btn filter-category col dt-view">Romantic BD</button>
+                        <button type="button" class="btn filter-category col dt-view">Rumberas</button>
                     </div>
                 </div>
-                <div class="title">
-                    <div class="title-background" style="width: 170px;"></div>
-                    <div class="title-text">Action movie</div>
-                </div>
-                <div class="film-list row" >
-                    <div class="film-info col">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim2.png" >
-                        </div> 
-                        <div class="board-bottom">1.000.000 view</div>  
-                    </div>
-                    <div class="film-info col">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim1.png" >
-                        </div> 
-                        <div class="board-bottom">1.000.000 view</div>  
-                    </div>
-                    <div class="film-info col">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim1.png" >
-                        </div> 
-                        <div class="board-bottom">1.000.000 view</div>  
-                    </div>
-                    <div class="film-info col dt-view">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim1.png" >
-                        </div> 
-                        <div class="board-bottom">1.000.000 view</div>  
-                    </div>
-                    <div class="film-info col dt-view">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim1.png" >
-                        </div> 
-                        <div class="board-bottom">1.000.000 view</div>  
-                    </div>
-                    <div class="film-info col dt-view">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim1.png" >
-                        </div> 
-                        <div class="board-bottom">1.000.000 view</div>  
-                    </div>
-                    <div class="film-info col dt-view">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim1.png" >
-                        </div> 
-                        <div class="board-bottom">1.000.000 view</div>  
-                    </div>
-                </div>
-               
-                <div class="title">
-                    <div class="title-background" style="width: 170px;"></div>
-                    <div class="title-text">Kids movie</div>
-                </div>
-                <div class="film-list row" >
-                    <div class="film-info col">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim2.png" >
-                        </div> 
-                        <div class="board-bottom">1.000.000 view</div>  
-                    </div>
-                    <div class="film-info col">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim1.png" >
-                        </div> 
-                        <div class="board-bottom">1.000.000 view</div>  
-                    </div>
-                    <div class="film-info col">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim1.png" >
-                        </div> 
-                        <div class="board-bottom">1.000.000 view</div>  
-                    </div>
-                    <div class="film-info col dt-view">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim1.png" >
-                        </div> 
-                        <div class="board-bottom">1.000.000 view</div>  
-                    </div>
-                    <div class="film-info col dt-view">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim1.png" >
-                        </div> 
-                        <div class="board-bottom">1.000.000 view</div>  
-                    </div>
-                    <div class="film-info col dt-view">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim1.png" >
-                        </div> 
-                        <div class="board-bottom">1.000.000 view</div>  
-                    </div>
-                    <div class="film-info col dt-view">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim1.png" >
-                        </div> 
-                        <div class="board-bottom">1.000.000 view</div>  
-                    </div>
-                </div>
-                <div class="title">
-                    <div class="title-background" style="width: 170px;"></div>
-                    <div class="title-text">Love movie</div>
-                </div>
-                <div class="film-list row" >
-                    <div class="film-info col">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim2.png" >
-                        </div> 
-                        <div class="board-bottom">1.000.000 view</div>  
-                    </div>
-                    <div class="film-info col">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim1.png" >
-                        </div> 
-                        <div class="board-bottom">1.000.000 view</div>  
-                    </div>
-                    <div class="film-info col">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim1.png" >
-                        </div> 
-                        <div class="board-bottom">1.000.000 view</div>  
-                    </div>
-                    <div class="film-info col dt-view">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim1.png" >
-                        </div> 
-                        <div class="board-bottom">1.000.000 view</div>  
-                    </div>
-                    <div class="film-info col dt-view">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim1.png" >
-                        </div> 
-                        <div class="board-bottom">1.000.000 view</div>  
-                    </div>
-                    <div class="film-info col dt-view">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim1.png" >
-                        </div> 
-                        <div class="board-bottom">1.000.000 view</div>  
-                    </div>
-                    <div class="film-info col dt-view">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim1.png" >
-                        </div> 
-                        <div class="board-bottom">1.000.000 view</div>  
-                    </div>
-                </div>
-                <div class="film-list-space"></div>
             </div>
+            <div class="container film-list-row-space text-center"  >
+                <div class="title">Action movies</div>
+            </div>
+            <div class="container film-list-row-space round-border film-list-bg-color">
+                <div class="film-list row pt-2" >
+                    <div class="film-info col">
+                        <div style="position: relative"> 
+                            <img class="img-fluid" src="image/phim11.jpg" >
+                        </div>
+                        <div class="board-bottom"><img src="icon/remove_red_eye-24px.svg" style="padding-bottom:4px"/> 10.365.775</div>  
+                    </div>
+                    <div class="film-info col">
+                        <div style="position: relative"> 
+                            <img class="img-fluid" src="image/phim12.jpg" >
+                        </div>
+                        <div class="board-bottom"><img src="icon/remove_red_eye-24px.svg" style="padding-bottom:4px"/> 9.589.563</div>  
+                    </div>
+                    <div class="film-info col">
+                        <div style="position: relative"> 
+                            <img class="img-fluid" src="image/phim13.jpg " >
+                        </div>
+                        <div class="board-bottom"><img src="icon/remove_red_eye-24px.svg" style="padding-bottom:4px"/> 9.255.125</div>  
+                    </div>
+                    <div class="film-info col dt-view">
+                        <div style="position: relative"> 
+                            <img class="img-fluid" src="image/phim14.jpg" >
+                        </div>
+                        <div class="board-bottom"><img src="icon/remove_red_eye-24px.svg" style="padding-bottom:4px"/> 9.132.686</div>  
+                    </div>
+                    <div class="film-info col dt-view">
+                        <div style="position: relative"> 
+                            <img class="img-fluid" src="image/phim15.jpg" >
+                        </div> 
+                        <div class="board-bottom"><img src="icon/remove_red_eye-24px.svg" style="padding-bottom:4px"/> 8.755.777</div>  
+                    </div>
+                </div>
+                <hr>
+                <div class="film-list row" >
+                    <div class="film-info col">
+                        <div style="position: relative"> 
+                            <img class="img-fluid" src="image/phim16.jpg" >
+                        </div>
+                        <div class="board-bottom"><img src="icon/remove_red_eye-24px.svg" style="padding-bottom:4px"/> 8.533.248</div>  
+                    </div>
+                    <div class="film-info col">
+                        <div style="position: relative"> 
+                            <img class="img-fluid" src="image/phim17.jpg" >
+                        </div>
+                        <div class="board-bottom"><img src="icon/remove_red_eye-24px.svg" style="padding-bottom:4px"/> 8.198.698</div>  
+                    </div>
+                    <div class="film-info col">
+                        <div style="position: relative"> 
+                            <img class="img-fluid" src="image/phim18.jpg " >
+                        </div>
+                        <div class="board-bottom"><img src="icon/remove_red_eye-24px.svg" style="padding-bottom:4px"/> 7.598.412</div>   
+                    </div>
+                    <div class="film-info col dt-view">
+                        <div style="position: relative"> 
+                            <img class="img-fluid" src="image/phim19.jpg" >
+                        </div>
+                        <div class="board-bottom"><img src="icon/remove_red_eye-24px.svg" style="padding-bottom:4px"/> 7.234.457</div>  
+                    </div>
+                    <div class="film-info col dt-view">
+                        <div style="position: relative"> 
+                            <img class="img-fluid" src="image/phim20.jpg" >
+                        </div>
+                        <div class="board-bottom"><img src="icon/remove_red_eye-24px.svg" style="padding-bottom:4px"/> 5.458.675</div>   
+                    </div>
+                </div>
+            </div>
+        </div>
         <footer style="background-color:#cccbcb ">
             <div class="container footer-text" style="background-color:#878787 ">
                 <span>Copyright &copy; Viet Phim Online 2019</span>

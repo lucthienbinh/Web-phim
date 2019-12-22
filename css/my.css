@@ -1,18 +1,21 @@
+.navbar-bg-color {
+  background-color: #ffdd00;
+}
 
 .homepagebuttonfont:hover, .homepagebuttonfont:focus {
     text-decoration: none;
-    color: whitesmoke;
+    color: red;
   }
 
 .nav-link-mod{
-    color: #FFF6F6;
+    color: black;
     font-size: 16px;
     display: block;
 }
 
 .nav-link-mod:hover, .nav-link-mod:focus {
     text-decoration: none;
-    color: yellow;  
+    color: red;  
 }
 
 .footer-text {
@@ -26,10 +29,5 @@
 .body-bg {
   background-color: #e9ebee;
   padding-top: 0.1px;
-  padding-bottom: 0.1px;
-}
-
-.film-list-row-space {
-  margin-bottom: 10px;
-  margin-top: 10px;
+  padding-bottom: 16px;
 }
