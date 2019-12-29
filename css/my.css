@@ -9,7 +9,7 @@
 
 .nav-link-mod{
     color: black;
-    font-size: 16px;
+    font-size: 16px;  
     display: block;
 }
 
@@ -24,10 +24,27 @@
   color: white;
   text-align: center;
   line-height: 25px;
+  background-color:#404040 
 }
 
 .body-bg {
   background-color: #e9ebee;
-  padding-top: 0.1px;
+  padding-top: 40px;
   padding-bottom: 16px;
 }
+
+.film-list-bg-color {
+  background-color:#feffec
+}
+
+hr.divider1 { 
+  margin-top: 16px;
+  margin-bottom: 12px;   
+  border-width: 2px;
+} 
+
+hr.divider2 { 
+  margin-top: 8px;
+  margin-bottom: 8px;   
+  border-width: 1px;
+} 

@@ -10,7 +10,7 @@
     </head>
     <body>
         <div class="header-page">
-            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #4F4F4F;">
+            <nav class="navbar navbar-expand-lg navbar-bg-color fixed-top">
                 <div class="container">
                     <!-- <a class="navbar-brand homepagefont" href="#">VIET PHIM ONLINE</a> -->
                     <a class="homepagebuttonfont" href="#">VIET PHIM ONLINE</a>
@@ -19,19 +19,19 @@
                     </button>
                     
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item col-md-4">
+                        <ul class="navbar-nav mr-auto ">
+                            <li class="nav-item col-md-5 text-center">
                                 <a class="nav-link-mod" href="index.html">Home Page <span class="sr-only">(current)</span></a>
                             </li>
-                            <li class="nav-item active col-md-5"> 
+                            <li class="nav-item col-md-6 text-center"> 
                                 <a class="nav-link-mod" href="film-list.html">All Categories</a>
                             </li>
-                            <li class="nav-item col-md-4">
+                            <li class="nav-item col-md-auto text-center">
                                 <a class="nav-link-mod" href="actor-list.html">All Actors</a>
                             </li>
                         </ul>
                         <ul class="navbar-nav">
-                            <li class="nav-item col-md-5">
+                            <li class="nav-item col-md-auto">
                                 <a class="nav-link-mod" href="#"><img src="icon/notifications-24px.svg" /></a>
                             </li>
                             <li class="nav-item dropdown " >
@@ -48,304 +48,225 @@
                     </div>
                 </div>
             </nav>
-        </div>   
-        <div class="body-page" style="background-color:#cccbcb;" >
-            <div class="container" >
-                <div class="row">
-                    <div class="col-md-9 filter-category-group" style="background:#bababa;">
-                        <div class="filter-category-row">
-                            <button type="button" class="btn filter-category">USA</button>
-                            <button type="button" class="btn filter-category">China</button>
-                            <button type="button" class="btn filter-category">Japan</button>
-                            <button type="button" class="btn filter-category">Hong Kong</button>
-                            <button type="button" class="btn filter-category dt-view">France</button>
-                        </div>
-                        <div class="filter-category-row">
-                            <button type="button" class="btn filter-category">USA</button>
-                            <button type="button" class="btn filter-category">China</button>
-                            <button type="button" class="btn filter-category">Japan</button>
-                            <button type="button" class="btn filter-category">Hong Kong</button>
-                            <button type="button" class="btn filter-category dt-view">France</button>
-                        </div>
-                        <div class="filter-category-row">
-                            <button type="button" class="btn filter-category">USA</button>
-                            <button type="button" class="btn filter-category">China</button>
-                            <button type="button" class="btn filter-category">Japan</button>
-                            <button type="button" class="btn filter-category">Hong Kong</button>
-                            <button type="button" class="btn filter-category dt-view">France</button>
-                        </div>
-                    </div>
-                    <div class="col-md-3" style="background: #636363;">
-                        <div class="filter-input">
-                            
-                            <input type="text" class="filter-search-box"
-                            placeholder="      Film informaton ...">
-                            <img class="filter-input-icon" src="icon/search-24px.svg" />
-                        </div>
-                        <div class="filter-button-row">
-                            <button id="buttonFilter" type="button"
-                                class="btn filter-button"
-                                onclick="location.href='actor-list-result.html'" >Filter
-                            </button>
-                            <button id="buttonAll" type="button" class="btn filter-button"
-                            onclick="location.href='actor-list-result.html'">All</button>
-                        </div>
-                    </div>
-                </div>
-               
+        </div>       
+        <div class="body-page body-bg" >
+            <div class="container film-list-row-space text-center"  >
+                <div class="title">Search Actor</div>
             </div>
-            <div class="container" style="background-color:#fffdad;" >
-                <div id="sortButton" class="sort-button-row">
-                    <button type="button" class="btn sort-button">A B C D E</button>
-                    <button type="button" class="btn sort-button">F G H I J</button>
-                    <button type="button" class="btn sort-button">K L M N O</button>
-                    <button type="button" class="btn sort-button">P Q R S T</button>
-                    <button type="button" class="btn sort-button">U V W X Y</button>
-                    <button type="button" class="btn sort-button sort-button-active">A -> Z</button>
+            <div class="container filter-category-row-space filter-bg-color" >
+                <div class="filter-header">
+                    <div class="input-group mt-1">
+                        <input type="text" class="form-control" placeholder="Input actor name and use filter for advanced search" 
+                        aria-label="Input movie name and use filter for advanced search aria-describedby="button-addon2">
+                        <div class="input-group-append" >
+                          <button class="btn btn-search btn-outline-secondary" 
+                          onclick="location.href='actor-list-result.html'"
+                          style="background-color:#f5f6ab; padding-top:3px;width:70px" 
+                          type="button" id="button-addon2"><img src="icon/search-24px.svg" /></button>
+                        </div>
+                      </div>
                 </div>
-                <div class="film-list row" > 
-                    <div class="film-info col">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/Dienvien1.png" >
-                        </div>
-                        <div class="board-top" >Johny Deep</div>  
-                        <div class="board-bottom">Da trung thuong</div>  
+                <hr>
+                <div class="filter-body">
+                    <div class="row">
+                        <button type="button" class="btn filter-category col">Albania</button>
+                        <button type="button" class="btn filter-category col">America </button>
+                        <button type="button" class="btn filter-category col">Austria</button>
+                        <button type="button" class="btn filter-category col">Belarus</button>
+                        <button type="button" class="btn filter-category col dt-view">Bhutan </button>
+                        <button type="button" class="btn filter-category col dt-view">Brazil</button>
                     </div>
-                    <div class="film-info col">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/Dienvien2.png" >
-                        </div>
-                        <div class="board-top" >Johny Deep</div>  
-                        <div class="board-bottom">Da trung thuong</div>   
+                    <div class="row">
+                        <button type="button" class="btn filter-category col">Burundi</button>
+                        <button type="button" class="btn filter-category col">Chile</button>
+                        <button type="button" class="btn filter-category col">Croatia</button>
+                        <button type="button" class="btn filter-category col">Denmark</button>
+                        <button type="button" class="btn filter-category col dt-view">Egypt</button>
+                        <button type="button" class="btn filter-category col dt-view">Ethiopia</button>
                     </div>
-                    <div class="film-info col">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/Dienvien2.png" >
-                        </div>
-                        <div class="board-top" >Johny Deep</div>  
-                        <div class="board-bottom">Da trung thuong</div>  
+                    <div class="row">
+                        <button type="button" class="btn filter-category col">Germany</button>
+                        <button type="button" class="btn filter-category col">Grenada</button>
+                        <button type="button" class="btn filter-category col">Iceland</button>
+                        <button type="button" class="btn filter-category col">Italy</button>
+                        <button type="button" class="btn filter-category col dt-view">Kenya</button>
+                        <button type="button" class="btn filter-category col dt-view">Liberia</button>
                     </div>
-                    <div class="film-info col dt-view">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/Dienvien3.png" >
-                        </div>
-                        <div class="board-top" >Johny Deep</div>  
-                        <div class="board-bottom">Da trung thuong</div>  
-                    </div>
-                    <div class="film-info col dt-view">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/Dienvien1.png" >
-                        </div>
-                        <div class="board-top" >Johny Deep</div>  
-                        <div class="board-bottom">Da trung thuong</div>  
-                    </div>
-                    <div class="film-info col dt-view">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/Dienvien2.png" >
-                        </div>
-                        <div class="board-top" >Johny Deep</div>  
-                        <div class="board-bottom">Da trung thuong</div>  
-                    </div>
-                    <div class="film-info col dt-view">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/Dienvien2.png" >
-                        </div>
-                        <div class="board-top" >Johny Deep</div>  
-                        <div class="board-bottom">Da trung thuong</div>  
+                    <div class="row">
+                        <button type="button" class="btn filter-category col">Nepal</button>
+                        <button type="button" class="btn filter-category col">Panama</button>
+                        <button type="button" class="btn filter-category col">Samoa</button>
+                        <button type="button" class="btn filter-category col">Serbia</button>
+                        <button type="button" class="btn filter-category col dt-view">Syria</button>
+                        <button type="button" class="btn filter-category col dt-view">Vietnam</button>
                     </div>
                 </div>
-                <div class="film-list-space"></div>
-                <div class="film-list row" > 
-                    <div class="film-info col">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/Dienvien1.png" >
-                        </div>
-                        <div class="board-top" >Johny Deep</div>  
-                        <div class="board-bottom">Da trung thuong</div>  
-                    </div>
-                    <div class="film-info col">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/Dienvien2.png" >
-                        </div>
-                        <div class="board-top" >Johny Deep</div>  
-                        <div class="board-bottom">Da trung thuong</div>   
-                    </div>
-                    <div class="film-info col">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/Dienvien2.png" >
-                        </div>
-                        <div class="board-top" >Johny Deep</div>  
-                        <div class="board-bottom">Da trung thuong</div>  
-                    </div>
-                    <div class="film-info col dt-view">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/Dienvien3.png" >
-                        </div>
-                        <div class="board-top" >Johny Deep</div>  
-                        <div class="board-bottom">Da trung thuong</div>  
-                    </div>
-                    <div class="film-info col dt-view">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/Dienvien1.png" >
-                        </div>
-                        <div class="board-top" >Johny Deep</div>  
-                        <div class="board-bottom">Da trung thuong</div>  
-                    </div>
-                    <div class="film-info col dt-view">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/Dienvien2.png" >
-                        </div>
-                        <div class="board-top" >Johny Deep</div>  
-                        <div class="board-bottom">Da trung thuong</div>  
-                    </div>
-                    <div class="film-info col dt-view">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/Dienvien2.png" >
-                        </div>
-                        <div class="board-top" >Johny Deep</div>  
-                        <div class="board-bottom">Da trung thuong</div>  
-                    </div>
-                </div>
-                <div class="film-list-space"></div>
-                <div class="film-list row" > 
-                    <div class="film-info col">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/Dienvien1.png" >
-                        </div>
-                        <div class="board-top" >Johny Deep</div>  
-                        <div class="board-bottom">Da trung thuong</div>  
-                    </div>
-                    <div class="film-info col">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/Dienvien2.png" >
-                        </div>
-                        <div class="board-top" >Johny Deep</div>  
-                        <div class="board-bottom">Da trung thuong</div>   
-                    </div>
-                    <div class="film-info col">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/Dienvien2.png" >
-                        </div>
-                        <div class="board-top" >Johny Deep</div>  
-                        <div class="board-bottom">Da trung thuong</div>  
-                    </div>
-                    <div class="film-info col dt-view">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/Dienvien3.png" >
-                        </div>
-                        <div class="board-top" >Johny Deep</div>  
-                        <div class="board-bottom">Da trung thuong</div>  
-                    </div>
-                    <div class="film-info col dt-view">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/Dienvien1.png" >
-                        </div>
-                        <div class="board-top" >Johny Deep</div>  
-                        <div class="board-bottom">Da trung thuong</div>  
-                    </div>
-                    <div class="film-info col dt-view">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/Dienvien2.png" >
-                        </div>
-                        <div class="board-top" >Johny Deep</div>  
-                        <div class="board-bottom">Da trung thuong</div>  
-                    </div>
-                    <div class="film-info col dt-view">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/Dienvien2.png" >
-                        </div>
-                        <div class="board-top" >Johny Deep</div>  
-                        <div class="board-bottom">Da trung thuong</div>  
-                    </div>
-                </div>
-                <div class="film-list-space"></div>
-                <div class="film-list row" > 
-                    <div class="film-info col">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/Dienvien1.png" >
-                        </div>
-                        <div class="board-top" >Johny Deep</div>  
-                        <div class="board-bottom">Da trung thuong</div>  
-                    </div>
-                    <div class="film-info col">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/Dienvien2.png" >
-                        </div>
-                        <div class="board-top" >Johny Deep</div>  
-                        <div class="board-bottom">Da trung thuong</div>   
-                    </div>
-                    <div class="film-info col">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/Dienvien2.png" >
-                        </div>
-                        <div class="board-top" >Johny Deep</div>  
-                        <div class="board-bottom">Da trung thuong</div>  
-                    </div>
-                    <div class="film-info col dt-view">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/Dienvien3.png" >
-                        </div>
-                        <div class="board-top" >Johny Deep</div>  
-                        <div class="board-bottom">Da trung thuong</div>  
-                    </div>
-                    <div class="film-info col dt-view">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/Dienvien1.png" >
-                        </div>
-                        <div class="board-top" >Johny Deep</div>  
-                        <div class="board-bottom">Da trung thuong</div>  
-                    </div>
-                    <div class="film-info col dt-view">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/Dienvien2.png" >
-                        </div>
-                        <div class="board-top" >Johny Deep</div>  
-                        <div class="board-bottom">Da trung thuong</div>  
-                    </div>
-                    <div class="film-info col dt-view">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/Dienvien2.png" >
-                        </div>
-                        <div class="board-top" >Johny Deep</div>  
-                        <div class="board-bottom">Da trung thuong</div>  
-                    </div>
-                </div>
-                <div class="film-list-space"></div>
             </div>
-        <footer style="background-color:#cccbcb ">
-            <div class="container footer-text" style="background-color:#878787 ">
-                <span>Copyright &copy; Viet Phim Online 2019</span>
-            </div><!-- /.container -->
-        </footer>
-        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <script>
-            $(document).ready(function(){
-                $('.filter-category').on('click',function(){
-                    if ($(this).hasClass('filter-category-active')) {
-                        $(this).removeClass('filter-category-active');
-                    }
-                    else
-                    {
-                        $(this).addClass('filter-category-active');
-                    }
-                });
-                // Get the container element
-                var btnContainer = document.getElementById("sortButton");
-
-                // Get all buttons with class="btn" inside the container
-                var btns = btnContainer.getElementsByClassName("btn");
-
-                // Loop through the buttons and add the active class to the current/clicked button
-                for (var i = 0; i < btns.length; i++) {
-                    btns[i].addEventListener("click", function() {
-                        var current = document.getElementsByClassName("sort-button-active");
-                        current[0].className = current[0].className.replace(" sort-button-active", "");
-                        this.className += " sort-button-active";
+            <div class="container film-list-row-space text-center"  >
+                <div class="title">Result actors</div>
+            </div>
+            <div class="container film-list-row-space round-border film-list-bg-color" >
+                <div id="sortButton" class="btn-sort-row">
+                    <button type="button" class="btn btn-sort">A B C D E</button>
+                    <button type="button" class="btn btn-sort">F G H I J</button>
+                    <button type="button" class="btn btn-sort">K L M N O</button>
+                    <button type="button" class="btn btn-sort">P Q R S T</button>
+                    <button type="button" class="btn btn-sort">U V W X Y</button>
+                    <button type="button" class="btn btn-sort btn-sort-active">A -> Z</button>
+                </div>
+                <hr>
+                <div class="film-list row" >
+                    <div class="film-info col">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info.html'"> 
+                            <img class="img-fluid" src="image/dienvien11.jpg" >
+                        </div>
+                        <div class="board-top" >Leonardo DiCaprio</div>  
+                    </div>
+                    <div class="film-info col">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info-2.html'"> 
+                            <img class="img-fluid" src="image/dienvien12.jpg" >
+                        </div>
+                        <div class="board-top" >Mark Wahlberg</div>  
+                    </div>
+                    <div class="film-info col">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info.html'"> 
+                            <img class="img-fluid" src="image/dienvien13.jpg " >
+                        </div>
+                        <div class="board-top" >Matt Damon</div>  
+                    </div>
+                    <div class="film-info col dt-view">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info-2.html'"> 
+                            <img class="img-fluid" src="image/dienvien14.jpg" >
+                        </div>
+                        <div class="board-top" >Michael Fassbender</div>  
+                    </div>
+                    <div class="film-info col dt-view">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info.html'"> 
+                            <img class="img-fluid" src="image/dienvien15.jpg" >
+                        </div>
+                        <div class="board-top" >Nick Hoult</div>  
+                    </div>
+                </div>
+                <hr>
+                <div class="film-list row" >
+                    <div class="film-info col">
+                        <div style="position: relative;" type="button" onclick="location.href='film-inf-2o.html'"> 
+                            <img class="img-fluid" src="image/dienvien16.jpg" >
+                        </div>
+                        <div class="board-top" >Ryan Reynolds</div>  
+                    </div>
+                    <div class="film-info col">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info.html'"> 
+                            <img class="img-fluid" src="image/dienvien17.jpg" >
+                        </div>
+                        <div class="board-top" >Mark Wahlberg</div>  
+                    </div>
+                    <div class="film-info col">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info-2.html'"> 
+                            <img class="img-fluid" src="image/dienvien18.jpg" >
+                        </div>
+                        <div class="board-top" >Chris Pratt</div>  
+                    </div>
+                    <div class="film-info col dt-view">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info.html'"> 
+                            <img class="img-fluid" src="image/dienvien19.jpg" >
+                        </div>
+                        <div class="board-top" >Jake Gyllenhaal</div>   
+                    </div>
+                    <div class="film-info col dt-view">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info-2.html'"> 
+                            <img class="img-fluid" src="image/dienvien20.jpg" >
+                        </div>
+                        <div class="board-top" >Logan Lerman</div>  
+                    </div>
+                </div>
+                <hr>
+                <div class="film-list row" >
+                    <div class="film-info col">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info.html'"> 
+                            <img class="img-fluid" src="image/dienvien1.jpg" >
+                        </div>
+                        <div class="board-top" >Leonardo DiCaprio</div>  
+                    </div>
+                    <div class="film-info col">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info-2.html'"> 
+                            <img class="img-fluid" src="image/dienvien2.jpg" >
+                        </div>
+                        <div class="board-top" >Mark Wahlberg</div>  
+                    </div>
+                    <div class="film-info col">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info.html'"> 
+                            <img class="img-fluid" src="image/dienvien3.jpg " >
+                        </div>
+                        <div class="board-top" >Matt Damon</div>  
+                    </div>
+                    <div class="film-info col dt-view">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info-2.html'"> 
+                            <img class="img-fluid" src="image/dienvien4.jpg" >
+                        </div>
+                        <div class="board-top" >Michael Fassbender</div>  
+                    </div>
+                    <div class="film-info col dt-view">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info.html'"> 
+                            <img class="img-fluid" src="image/dienvien5.jpg" >
+                        </div>
+                        <div class="board-top" >Nick Hoult</div>  
+                    </div>
+                </div>
+                <hr>
+                <div class="film-list row" >
+                    <div class="film-info col">
+                        <div style="position: relative;" type="button" onclick="location.href='film-inf-2o.html'"> 
+                            <img class="img-fluid" src="image/dienvien6.jpg" >
+                        </div>
+                        <div class="board-top" >Ryan Reynolds</div>  
+                    </div>
+                    <div class="film-info col">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info.html'"> 
+                            <img class="img-fluid" src="image/dienvien7.jpg" >
+                        </div>
+                        <div class="board-top" >Mark Wahlberg</div>  
+                    </div>
+                    <div class="film-info col">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info-2.html'"> 
+                            <img class="img-fluid" src="image/dienvien8.jpg" >
+                        </div>
+                        <div class="board-top" >Chris Pratt</div>  
+                    </div>
+                    <div class="film-info col dt-view">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info.html'"> 
+                            <img class="img-fluid" src="image/dienvien9.jpg" >
+                        </div>
+                        <div class="board-top" >Jake Gyllenhaal</div>   
+                    </div>
+                    <div class="film-info col dt-view">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info-2.html'"> 
+                            <img class="img-fluid" src="image/dienvien10.jpg" >
+                        </div>
+                        <div class="board-top" >Logan Lerman</div>  
+                    </div>
+                </div>
+            </div>
+            <footer style="background-color:#e9ebee ">
+                <div class="container footer-text">
+                    <span>Copyright &copy; Viet Phim Online 2019</span>
+                </div>
+            </footer>
+            <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+            <script type="text/javascript" src="js/bootstrap.min.js"></script>
+            <script>
+                $(document).ready(function(){
+                    $('.filter-category').on('click',function(){
+                        if ($(this).hasClass('filter-category-active')) {
+                            $(this).removeClass('filter-category-active');
+                        }
+                        else
+                        {
+                            $(this).addClass('filter-category-active');
+                        }
                     });
-                }
-            })
-        </script>
-
-    </body>
-</html>
+                })
+            </script>
+    
+        </body>
+    </html>

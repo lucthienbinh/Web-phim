@@ -157,13 +157,13 @@
         width:100px;
     }
 
-    .sort-button-row{
+    .btn-sort-row{
         display: flex;
         justify-content: center;
         padding: 6px 40px 6px 40px;
     }
 
-    .sort-button{
+    .btn-sort{
         font-size: 16px;
         color: #ffffff;
         letter-spacing: 1px;
@@ -175,7 +175,7 @@
         margin-right: 10px;
     }
 
-    .sort-button-active, .sort-button:hover {
+    .btn-sort-active, .btn-sort:hover {
         color: rgb(115, 109, 104);
         background: #ffffff;
     }
@@ -330,13 +330,13 @@
         width:100px;
     }
 
-    .sort-button-row{
+    .btn-sort-row{
         display: flex;
         justify-content: center;
         padding: 6px 40px 6px 40px;
     }
 
-    .sort-button{
+    .btn-sort{
         font-size: 16px;
         color: #ffffff;
         letter-spacing: 1px;
@@ -348,7 +348,7 @@
         margin-right: 10px;
     }
 
-    .sort-button-active, .sort-button:hover {
+    .btn-sort-active, .btn-sort:hover {
         color: rgb(115, 109, 104);
         background: #ffffff;
     }
@@ -429,11 +429,7 @@
 
     .film-list-row-space {
         padding-top: 16px ;
-        padding-bottom: 16px ;
-    }
-
-    .film-list-bg-color {
-        background-color:#feffe8
+        padding-bottom: 12px ;
     }
 
     .film-list{
@@ -469,8 +465,6 @@
     }
 
     .filter-category-row-space {
-        margin-bottom: 10px;
-        margin-top: 14px;
         padding-top: 8px;
     }
 
@@ -484,7 +478,7 @@
     }
 
     .filter-body{
-        padding:4px;
+        padding: 0px 8px 4px 8px;
     }
 
     .filter-category{
@@ -493,24 +487,24 @@
         letter-spacing: 1px;
         line-height: 18px;
         border-radius: 15px;
-        background-color:#ffff59;
+        background-color:#ffff3f;
         transition: all 0.3 s ease 0s;
         border: none;
-        margin: 4px;
+        margin:  0px 4px 8px 4px;
     }
 
     .filter-category-active, .filter-category:hover {
         color: #FFF;
-        background: #ab5505;
+        background: #dda600;
     }
 
-    .sort-button-row{
+    .btn-sort-row{
         display: flex;
         justify-content: center;
         padding: 6px 100px 6px 100px;
     }
 
-    .sort-button{
+    .btn-sort{
         font-size: 16px;
         color: #ffffff;
         letter-spacing: 1px;
@@ -522,25 +516,98 @@
         margin-right: 10px;
     }
 
-    .sort-button-active, .sort-button:hover {
+    .btn-sort-active, .btn-sort:hover {
         color: rgb(115, 109, 104);
         background: #ffffff;
     }
 
-    .film-card {
-        padding: 6px;
+    .film-card-row-space {
+        padding-top: 20px;
     }
 
-    .film-card-name {
-        height: 30px;
-        background-color: rgba(0,100,0,0.5);
-        font-size: 20px;
-        color: white;
-        text-align: center;
-        line-height: 30px;
-        padding: 0px;
-        margin: 0px;
+    .film-card .image-container img { 
+        width:100%;
+        height: auto;
     }
+
+    .image-padding {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .film-card .info {
+        width:100%;
+        border: 2px solid black;
+        background: #fff7c4;
+    }
+
+    .film-card .name {
+        width: 100%;
+        font-family: 'Righteous', cursive; 
+        text-align: center;
+        font-size: 24px;
+        color: black;
+        font-family: 'Righteous', cursive; 
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+    .film-card .basic-info {
+        display: flex;
+        justify-content: center;
+    }
+
+    .film-card .basic-info .recommend {
+        color: #cf455c;
+        font-weight: 500;
+    }
+
+    .film-card .basic-info .year {
+        font-weight: 500;
+        margin-left: 8px;
+    }
+
+    .film-card .basic-info .quality {
+        margin-left: 8px;
+        font-weight: 500;
+        background-color: #f6da63;
+        color: black;
+        border: 1px solid black;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    .film-card .detail {
+        padding-top: 4px;
+        font-size: 16px;
+        font-style: italic;
+    }
+
+    .btn-play-row {
+        border-bottom: 1px solid black;
+        padding: 0px  4px 8px 4px;
+    }
+
+    .btn-play {
+        font-size: 16px;
+        color: #231f20;
+        letter-spacing: 1px;
+        line-height: 18px;
+        border-radius: 15px;
+        background-color:#f6da63;
+        transition: all 0.3 s ease 0s;
+        border: none;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+
+    .btn-play:hover {
+        background-color:#f65c78;
+        color:white;
+    }
+
 }
 /* 
 var dt = new Date();

@@ -10,7 +10,7 @@
     </head>
     <body>
         <div class="header-page">
-            <nav class="navbar navbar-expand-lg navbar-bg-color">
+            <nav class="navbar navbar-expand-lg navbar-bg-color fixed-top">
                 <div class="container">
                     <!-- <a class="navbar-brand homepagefont" href="#">VIET PHIM ONLINE</a> -->
                     <a class="homepagebuttonfont" href="#">VIET PHIM ONLINE</a>
@@ -48,31 +48,31 @@
                     </div>
                 </div>
             </nav>
-        </div>      
+        </div>          
         <div class="body-page body-bg" >
             <div class="container film-list-row-space text-center"  >
-                <div class="title">Search movie with filter</div>
+                <div class="title">Search Movie</div>
             </div>
             <div class="container filter-category-row-space filter-bg-color" >
                 <div class="filter-header">
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="inputGroup-sizing-default">Name</span>
+                    <div class="input-group mt-1">
+                        <input type="text" class="form-control" placeholder="Input movie name and use filter for advanced search" 
+                        aria-label="Input movie name and use filter for advanced search aria-describedby="button-addon2">
+                        <div class="input-group-append" >
+                          <button class="btn btn-search btn-outline-secondary" 
+                          onclick="location.href='film-list-result.html'"
+                          style="background-color:#f5f6ab; padding-top:3px;width:70px" 
+                          type="button" id="button-addon2"><img src="icon/search-24px.svg" /></button>
                         </div>
-                        <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default"
-                        placeholder="Type in name of film ... ">
-                        
-                    </div>
-                    <!-- <button type="button" class="btn filter-category col dt-view col-md-auto" style="background-color: red;">Search by filter</button>
-                        <button type="button" class="btn filter-category col dt-view col-md-auto" style="background-color: red;">Search all</button> -->
+                      </div>
                 </div>
+                <hr>
                 <div class="filter-body">
                     <div class="row">
                         <button type="button" class="btn filter-category col">Action</button>
                         <button type="button" class="btn filter-category col">Amateur </button>
                         <button type="button" class="btn filter-category col">Anthology</button>
                         <button type="button" class="btn filter-category col">Bad boy</button>
-                        <button type="button" class="btn filter-category col">Bad girl</button>
                         <button type="button" class="btn filter-category col dt-view">Cartoon </button>
                         <button type="button" class="btn filter-category col dt-view">Comedy</button>
                     </div>
@@ -82,7 +82,6 @@
                         <button type="button" class="btn filter-category col">Fiction</button>
                         <button type="button" class="btn filter-category col">Heritage</button>
                         <button type="button" class="btn filter-category col">Historical</button>
-                        <button type="button" class="btn filter-category col dt-view">Hoods</button>
                         <button type="button" class="btn filter-category col dt-view">Horror</button>
                     </div>
                     <div class="row">
@@ -91,7 +90,6 @@
                         <button type="button" class="btn filter-category col">Kids</button>
                         <button type="button" class="btn filter-category col">Korean</button>
                         <button type="button" class="btn filter-category col">Love</button>
-                        <button type="button" class="btn filter-category col dt-view">Musicarello</button>
                         <button type="button" class="btn filter-category col dt-view">Rape</button>
                     </div>
                     <div class="row">
@@ -100,7 +98,6 @@
                         <button type="button" class="btn filter-category col">Reality</button>
                         <button type="button" class="btn filter-category col">Retrospective</button>
                         <button type="button" class="btn filter-category col">Romance</button>
-                        <button type="button" class="btn filter-category col dt-view">Romantic BD</button>
                         <button type="button" class="btn filter-category col dt-view">Rumberas</button>
                     </div>
                 </div>
@@ -108,78 +105,344 @@
             <div class="container film-list-row-space text-center"  >
                 <div class="title">Action movies</div>
             </div>
-            <div class="container film-list-row-space round-border film-list-bg-color">
-                <div class="film-list row pt-2" >
+            <div class="container film-list-row-space round-border film-list-bg-color" >
+                <div class="film-list row" >
                     <div class="film-info col">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim11.jpg" >
+                        <div style="position: relative;" type="button" onclick="location.href='film-info.html'"> 
+                            <img class="img-fluid" src="image/phim1.jpg" >
                         </div>
-                        <div class="board-bottom"><img src="icon/remove_red_eye-24px.svg" style="padding-bottom:4px"/> 10.365.775</div>  
+                        <div class="board-bottom" >Cast: Tom, Leonardo DiCaprio, Ryan Reynolds</div>
+                        <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 9.198.698</div>  
                     </div>
                     <div class="film-info col">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim12.jpg" >
+                        <div style="position: relative;" type="button" onclick="location.href='film-info-2.html'"> 
+                            <img class="img-fluid" src="image/phim2.jpg" >
                         </div>
-                        <div class="board-bottom"><img src="icon/remove_red_eye-24px.svg" style="padding-bottom:4px"/> 9.589.563</div>  
+                        <div class="board-bottom">Cast: Tom Ben, Chris Pratt, Mark Wahlberg</div>
+                        <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 8.222.585</div> 
                     </div>
                     <div class="film-info col">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim13.jpg " >
+                        <div style="position: relative;" type="button" onclick="location.href='film-info.html'"> 
+                            <img class="img-fluid" src="image/phim3.jpg " >
                         </div>
-                        <div class="board-bottom"><img src="icon/remove_red_eye-24px.svg" style="padding-bottom:4px"/> 9.255.125</div>  
+                        <div class="board-bottom">Cast: Tom Siva, Ben Affleck, Matt Damon</div>
+                        <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 7.463.287</div>  
                     </div>
                     <div class="film-info col dt-view">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim14.jpg" >
+                        <div style="position: relative;" type="button" onclick="location.href='film-info-2.html'"> 
+                            <img class="img-fluid" src="image/phim4.jpg" >
                         </div>
-                        <div class="board-bottom"><img src="icon/remove_red_eye-24px.svg" style="padding-bottom:4px"/> 9.132.686</div>  
+                        <div class="board-bottom">Cast: Jake Gyllenhaal, Michael Fassbender, Chris</div>
+                        <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 7.153.758</div>  
                     </div>
                     <div class="film-info col dt-view">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim15.jpg" >
-                        </div> 
-                        <div class="board-bottom"><img src="icon/remove_red_eye-24px.svg" style="padding-bottom:4px"/> 8.755.777</div>  
+                        <div style="position: relative;" type="button" onclick="location.href='film-info.html'"> 
+                            <img class="img-fluid" src="image/phim5.jpg" >
+                        </div>
+                        <div class="board-bottom">Cast: Chris Evans, Nick Hoult, Logan Lerman</div>
+                        <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 6.586.775</div> 
                     </div>
                 </div>
                 <hr>
                 <div class="film-list row" >
                     <div class="film-info col">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim16.jpg" >
+                        <div style="position: relative;" type="button" onclick="location.href='film-inf-2o.html'"> 
+                            <img class="img-fluid" src="image/phim6.jpg" >
                         </div>
-                        <div class="board-bottom"><img src="icon/remove_red_eye-24px.svg" style="padding-bottom:4px"/> 8.533.248</div>  
+                        <div class="board-bottom">Cast: Tom, Leonardo DiCaprio, Ryan Reynolds</div>
+                        <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 6.235.698</div>  
                     </div>
                     <div class="film-info col">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim17.jpg" >
+                        <div style="position: relative;" type="button" onclick="location.href='film-info.html'"> 
+                            <img class="img-fluid" src="image/phim7.jpg" >
                         </div>
-                        <div class="board-bottom"><img src="icon/remove_red_eye-24px.svg" style="padding-bottom:4px"/> 8.198.698</div>  
+                        <div class="board-bottom">Cast: Tom Ben, Chris Pratt, Mark Wahlberg</div>
+                        <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 6.387.698</div>
                     </div>
                     <div class="film-info col">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim18.jpg " >
+                        <div style="position: relative;" type="button" onclick="location.href='film-info-2.html'"> 
+                            <img class="img-fluid" src="image/phim8.jpg" >
                         </div>
-                        <div class="board-bottom"><img src="icon/remove_red_eye-24px.svg" style="padding-bottom:4px"/> 7.598.412</div>   
+                        <div class="board-bottom">Cast: Tom Siva, Ben Affleck, Matt Damon</div>
+                        <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 5.785.698</div>  
                     </div>
                     <div class="film-info col dt-view">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim19.jpg" >
+                        <div style="position: relative;" type="button" onclick="location.href='film-info.html'"> 
+                            <img class="img-fluid" src="image/phim9.jpg" >
                         </div>
-                        <div class="board-bottom"><img src="icon/remove_red_eye-24px.svg" style="padding-bottom:4px"/> 7.234.457</div>  
+                        <div class="board-bottom">Cast: Jake Gyllenhaal, Michael Fassbender, Chris</div>
+                        <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 4.485.698</div>  
                     </div>
                     <div class="film-info col dt-view">
-                        <div style="position: relative"> 
-                            <img class="img-fluid" src="image/phim20.jpg" >
+                        <div style="position: relative;" type="button" onclick="location.href='film-info-2.html'"> 
+                            <img class="img-fluid" src="image/phim10.jpg" >
                         </div>
-                        <div class="board-bottom"><img src="icon/remove_red_eye-24px.svg" style="padding-bottom:4px"/> 5.458.675</div>   
+                        <div class="board-bottom">Cast: Chris Evans, Nick Hoult, Logan Lerman</div>
+                        <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 3.852.698</div>  
                     </div>
                 </div>
+                <hr class="divider1">
+                <div class="btn-view-all-row">
+                    <button type="button" class="btn btn-view-all">View all movies</button>
+                </div>
             </div>
+            <div class="container film-list-row-space text-center"  >
+                <div class="title">Cartoon movies</div>
+            </div>
+            <div class="container film-list-row-space round-border film-list-bg-color" >
+                <div class="film-list row" >
+                    <div class="film-info col">
+                        <div style="position: relative;">
+                            <img class="img-fluid" src="image/phim11.jpg" >
+                        </div>
+                        <div class="board-bottom" >Cast: Tom, Leonardo DiCaprio, Ryan Reynolds</div>
+                        <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 9.198.698</div>  
+                    </div>
+                    <div class="film-info col">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info.html'"> 
+                            <img class="img-fluid" src="image/phim12.jpg" >
+                        </div>
+                        <div class="board-bottom">Cast: Tom Ben, Chris Pratt, Mark Wahlberg</div>
+                        <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 8.222.585</div> 
+                    </div>
+                    <div class="film-info col">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info-2.html'"> 
+                            <img class="img-fluid" src="image/phim13.jpg " >
+                        </div>
+                        <div class="board-bottom">Cast: Tom Siva, Ben Affleck, Matt Damon</div>
+                        <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 7.463.287</div>  
+                    </div>
+                    <div class="film-info col dt-view">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info.html'"> 
+                            <img class="img-fluid" src="image/phim14.jpg" >
+                        </div>
+                        <div class="board-bottom">Cast: Jake Gyllenhaal, Michael Fassbender, Chris</div>
+                        <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 7.153.758</div>  
+                    </div>
+                    <div class="film-info col dt-view">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info-2.html'"> 
+                            <img class="img-fluid" src="image/phim15.jpg" >
+                        </div>
+                        <div class="board-bottom">Cast: Chris Evans, Nick Hoult, Logan Lerman</div>
+                        <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 6.586.775</div> 
+                    </div>
+                </div>
+                <hr>
+                <div class="film-list row" >
+                    <div class="film-info col">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info-2.html'"> 
+                            <img class="img-fluid" src="image/phim16.jpg" >
+                        </div>
+                        <div class="board-bottom">Cast: Tom, Leonardo DiCaprio, Ryan Reynolds</div>
+                        <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 6.235.698</div>  
+                    </div>
+                    <div class="film-info col">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info.html'"> 
+                            <img class="img-fluid" src="image/phim17.jpg" >
+                        </div>
+                        <div class="board-bottom">Cast: Tom Ben, Chris Pratt, Mark Wahlberg</div>
+                        <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 6.387.698</div>
+                    </div>
+                    <div class="film-info col">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info-2.html'"> 
+                            <img class="img-fluid" src="image/phim18.jpg" >
+                        </div>
+                        <div class="board-bottom">Cast: Tom Siva, Ben Affleck, Matt Damon</div>
+                        <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 5.785.698</div>  
+                    </div>
+                    <div class="film-info col dt-view">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info.html'"> 
+                            <img class="img-fluid" src="image/phim19.jpg" >
+                        </div>
+                        <div class="board-bottom">Cast: Jake Gyllenhaal, Michael Fassbender, Chris</div>
+                        <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 4.485.698</div>  
+                    </div>
+                    <div class="film-info col dt-view">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info-2.html'"> 
+                            <img class="img-fluid" src="image/phim20.jpg" >
+                        </div>
+                        <div class="board-bottom">Cast: Chris Evans, Nick Hoult, Logan Lerman</div>
+                        <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 3.852.698</div>  
+                    </div>
+                </div>
+                <hr class="divider1">
+                <div class="btn-view-all-row">
+                    <button type="button" class="btn btn-view-all">View all movies</button>
+                </div>
+            </div>
+            <div class="container film-list-row-space text-center"  >
+                <div class="title">Horror movies</div>
+            </div>
+            <div class="container film-list-row-space round-border film-list-bg-color" >
+                <div class="film-list row" >
+                    <div class="film-info col">
+                        <div style="position: relative;">
+                            <img class="img-fluid" src="image/phim21.jpg" >
+                        </div>
+                        <div class="board-bottom" >Cast: Tom, Leonardo DiCaprio, Ryan Reynolds</div>
+                        <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 9.198.698</div>  
+                    </div>
+                    <div class="film-info col">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info.html'"> 
+                            <img class="img-fluid" src="image/phim22.jpg" >
+                        </div>
+                        <div class="board-bottom">Cast: Tom Ben, Chris Pratt, Mark Wahlberg</div>
+                        <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 8.222.585</div> 
+                    </div>
+                    <div class="film-info col">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info.html'"> 
+                            <img class="img-fluid" src="image/phim23.jpg " >
+                        </div>
+                        <div class="board-bottom">Cast: Tom Siva, Ben Affleck, Matt Damon</div>
+                        <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 7.463.287</div>  
+                    </div>
+                    <div class="film-info col dt-view">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info.html'"> 
+                            <img class="img-fluid" src="image/phim24.jpg" >
+                        </div>
+                        <div class="board-bottom">Cast: Jake Gyllenhaal, Michael Fassbender, Chris</div>
+                        <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 7.153.758</div>  
+                    </div>
+                    <div class="film-info col dt-view">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info.html'"> 
+                            <img class="img-fluid" src="image/phim25.jpg" >
+                        </div>
+                        <div class="board-bottom">Cast: Chris Evans, Nick Hoult, Logan Lerman</div>
+                        <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 6.586.775</div> 
+                    </div>
+                </div>
+                <hr>
+                <div class="film-list row" >
+                    <div class="film-info col">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info.html'"> 
+                            <img class="img-fluid" src="image/phim26.jpg" >
+                        </div>
+                        <div class="board-bottom">Cast: Tom, Leonardo DiCaprio, Ryan Reynolds</div>
+                        <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 6.235.698</div>  
+                    </div>
+                    <div class="film-info col">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info.html'"> 
+                            <img class="img-fluid" src="image/phim27.jpg" >
+                        </div>
+                        <div class="board-bottom">Cast: Tom Ben, Chris Pratt, Mark Wahlberg</div>
+                        <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 6.387.698</div>
+                    </div>
+                    <div class="film-info col">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info.html'"> 
+                            <img class="img-fluid" src="image/phim28.jpg" >
+                        </div>
+                        <div class="board-bottom">Cast: Tom Siva, Ben Affleck, Matt Damon</div>
+                        <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 5.785.698</div>  
+                    </div>
+                    <div class="film-info col dt-view">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info.html'"> 
+                            <img class="img-fluid" src="image/phim29.jpg" >
+                        </div>
+                        <div class="board-bottom">Cast: Jake Gyllenhaal, Michael Fassbender, Chris</div>
+                        <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 4.485.698</div>  
+                    </div>
+                    <div class="film-info col dt-view">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info.html'"> 
+                            <img class="img-fluid" src="image/phim30.jpg" >
+                        </div>
+                        <div class="board-bottom">Cast: Chris Evans, Nick Hoult, Logan Lerman</div>
+                        <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 3.852.698</div>  
+                    </div>
+                </div>
+                <hr class="divider1">
+                <div class="btn-view-all-row">
+                    <button type="button" class="btn btn-view-all">View all movies</button>
+                </div>
+            </div>
+            <div class="container film-list-row-space text-center"  >
+                <div class="title">Love movies</div>
+            </div>
+            <div class="container film-list-row-space round-border film-list-bg-color" >
+                <div class="film-list row" >
+                    <div class="film-info col">
+                        <div style="position: relative;">
+                            <img class="img-fluid" src="image/phim1.jpg" >
+                        </div>
+                        <div class="board-bottom" >Cast: Tom, Leonardo DiCaprio, Ryan Reynolds</div>
+                        <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 9.198.698</div>  
+                    </div>
+                    <div class="film-info col">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info.html'"> 
+                            <img class="img-fluid" src="image/phim2.jpg" >
+                        </div>
+                        <div class="board-bottom">Cast: Tom Ben, Chris Pratt, Mark Wahlberg</div>
+                        <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 8.222.585</div> 
+                    </div>
+                    <div class="film-info col">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info.html'"> 
+                            <img class="img-fluid" src="image/phim3.jpg " >
+                        </div>
+                        <div class="board-bottom">Cast: Tom Siva, Ben Affleck, Matt Damon</div>
+                        <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 7.463.287</div>  
+                    </div>
+                    <div class="film-info col dt-view">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info.html'"> 
+                            <img class="img-fluid" src="image/phim4.jpg" >
+                        </div>
+                        <div class="board-bottom">Cast: Jake Gyllenhaal, Michael Fassbender, Chris</div>
+                        <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 7.153.758</div>  
+                    </div>
+                    <div class="film-info col dt-view">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info.html'"> 
+                            <img class="img-fluid" src="image/phim5.jpg" >
+                        </div>
+                        <div class="board-bottom">Cast: Chris Evans, Nick Hoult, Logan Lerman</div>
+                        <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 6.586.775</div> 
+                    </div>
+                </div>
+                <hr>
+                <div class="film-list row" >
+                    <div class="film-info col">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info.html'"> 
+                            <img class="img-fluid" src="image/phim6.jpg" >
+                        </div>
+                        <div class="board-bottom">Cast: Tom, Leonardo DiCaprio, Ryan Reynolds</div>
+                        <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 6.235.698</div>  
+                    </div>
+                    <div class="film-info col">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info.html'"> 
+                            <img class="img-fluid" src="image/phim7.jpg" >
+                        </div>
+                        <div class="board-bottom">Cast: Tom Ben, Chris Pratt, Mark Wahlberg</div>
+                        <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 6.387.698</div>
+                    </div>
+                    <div class="film-info col">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info.html'"> 
+                            <img class="img-fluid" src="image/phim8.jpg" >
+                        </div>
+                        <div class="board-bottom">Cast: Tom Siva, Ben Affleck, Matt Damon</div>
+                        <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 5.785.698</div>  
+                    </div>
+                    <div class="film-info col dt-view">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info.html'"> 
+                            <img class="img-fluid" src="image/phim9.jpg" >
+                        </div>
+                        <div class="board-bottom">Cast: Jake Gyllenhaal, Michael Fassbender, Chris</div>
+                        <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 4.485.698</div>  
+                    </div>
+                    <div class="film-info col dt-view">
+                        <div style="position: relative;" type="button" onclick="location.href='film-info.html'"> 
+                            <img class="img-fluid" src="image/phim10.jpg" >
+                        </div>
+                        <div class="board-bottom">Cast: Chris Evans, Nick Hoult, Logan Lerman</div>
+                        <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 3.852.698</div>  
+                    </div>
+                </div>
+                <hr class="divider1">
+                <div class="btn-view-all-row">
+                    <button type="button" class="btn btn-view-all">View all movies</button>
+                </div>
+            </div>  
         </div>
-        <footer style="background-color:#cccbcb ">
-            <div class="container footer-text" style="background-color:#878787 ">
+        <footer style="background-color:#e9ebee ">
+            <div class="container footer-text">
                 <span>Copyright &copy; Viet Phim Online 2019</span>
-            </div><!-- /.container -->
+            </div>
         </footer>
         <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -194,6 +457,14 @@
                         $(this).addClass('filter-category-active');
                     }
                 });
+                $('.img-fluid').mouseenter(function()
+                {
+                    $(this).parent().parent().children('.board-bottom').show();
+                });
+                $('.img-fluid').mouseleave(function()
+                { 
+                    $(this).parent().parent().children('.board-bottom').hide();
+                }); 
             })
         </script>
 
