@@ -383,13 +383,14 @@
 
     .board-top {
         height: 23px;
-        background-color: #fff07a;      
+        background-color: #fff2a1;      
         color: black;
         text-align: center;
         line-height: 23px;
         left: 3px;
         right: 3px;
-        font-size: 16px;    
+        font-size: 16px;   
+        border: 1px solid #ced4da; 
     }
 
     .board-bottom {
@@ -415,15 +416,16 @@
         padding: 4px 20px 4px 20px;
         font-size: 16px;
         color:#404040;
-        background-color: #FFFF33;
+        background-color: #ffee82;
         letter-spacing: 1px;
         line-height: 18px;
         border-radius: 20px;
+        border: 1px solid #ced4da;
         transition: all 0.3s ease 0s;
     }
       
     .btn-view-all:hover {
-        color: #FFFF33;
+        color: white;
         background: #404040;
     }
 
@@ -487,15 +489,18 @@
         letter-spacing: 1px;
         line-height: 18px;
         border-radius: 15px;
-        background-color:#ffff3f;
-        transition: all 0.3 s ease 0s;
-        border: none;
+        background-color:#ffff75;
+        border: 1px solid #ced4da;
         margin:  0px 4px 8px 4px;
     }
 
     .filter-category-active, .filter-category:hover {
         color: #FFF;
         background: #dda600;
+    }
+
+    .btn-search {
+        border: 1px solid #ced4da;
     }
 
     .btn-sort-row{
@@ -506,39 +511,43 @@
 
     .btn-sort{
         font-size: 16px;
-        color: #ffffff;
+        color: black;
+        border: 1px solid #ced4da;
         letter-spacing: 1px;
         line-height: 13px;
         border-radius: 40px;
-        background: rgb(115, 109, 104);
+        background: #ffff75;
         transition: all 0.3 s ease 0s;
         width: 200px;
         margin-right: 10px;
     }
 
     .btn-sort-active, .btn-sort:hover {
-        color: rgb(115, 109, 104);
-        background: #ffffff;
+        color: black; 
+        background: #ffff75;
+        border: 2px solid black;
     }
 
     .film-card-row-space {
-        padding-top: 20px;
+        margin-top: 20px;
     }
 
-    .film-card .image-container img { 
+    .film-card .image { 
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .film-card .image img { 
         width:100%;
         height: auto;
-    }
-
-    .image-padding {
         padding-left: 0px;
         padding-right: 0px;
     }
 
     .film-card .info {
         width:100%;
-        border: 2px solid black;
-        background: #fff7c4;
+        border: 1px solid black;
+        background: #fffad9;
     }
 
     .film-card .name {
@@ -572,7 +581,7 @@
     .film-card .basic-info .quality {
         margin-left: 8px;
         font-weight: 500;
-        background-color: #f6da63;
+        background-color: #ffdd4a;
         color: black;
         border: 1px solid black;
         padding-left: 4px;
@@ -580,7 +589,16 @@
     }
 
     .film-card .detail {
-        padding-top: 4px;
+        padding-top: 8px;
+        padding-right: 4px;
+        padding-left: 4px;
+        font-size: 16px;
+        font-style: italic;
+    }
+    .film-card .detail p{
+        margin-top: 3px;
+        margin-bottom: 4px;
+        padding-left: 20px;
         font-size: 16px;
         font-style: italic;
     }
@@ -606,6 +624,94 @@
     .btn-play:hover {
         background-color:#f65c78;
         color:white;
+    }
+
+    .actor-card-row-space {
+        margin-top: 20px;
+    }
+
+    .actor-card-border {
+        border-right: 1.5px solid black;
+        background-color: #231f20;
+    }
+
+    .actor-card .image img { 
+        width:100%;
+        height: auto;
+    }
+
+    .actor-card {
+        border: 1px solid #ced4da;
+        border-radius: 3px;
+        margin: 15px 0px 15px 0px;
+    }
+
+    .actor-card .image {
+        padding: 8px 0px 8px 8px;
+    }
+
+    .actor-card .name {
+        color: #7c795d; 
+        font-family: 'Trocchi', serif; 
+        font-size: 32px; 
+        font-weight: normal; 
+        line-height: 48px;
+        margin: 0;
+    }
+
+    .actor-card .basic-info {
+        display: flex;
+        justify-content: start;
+    }
+
+    .actor-card .basic-info .carrer {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 14px; 
+        line-height: 20px;
+        margin-right: 8px;
+    }
+    
+    .actor-card .basic-info .headline {
+        font-weight: 700;
+        font-size: 16px; 
+        color: rgb(102, 102, 102);
+        line-height: 22px;
+        margin-right: 8px;
+    }
+
+    .actor-card .headline {
+        font-weight: 600;
+        font-size: 16px; 
+        color: rgb(102, 102, 102);
+        line-height: 24px;
+    }
+
+    .actor-card .info-line-1 {
+        margin-left: 20px;
+        background-color: rgb(251, 251, 251);
+        font-size: 16px; 
+        line-height: 22px;
+    }
+
+    .actor-card .info-line-2 {
+        margin-left: 20px;
+        background-color: rgb(246, 246, 245);
+        font-size: 16px; 
+        line-height: 22px;
+    }
+
+    .actor-card-movie {
+        margin: 15px 0px 15px 0px;
+        border: 1.5px solid black;
+    }
+
+    .actor-card-movie .headline{
+        color: #7c795d; 
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 24px; 
+        font-weight: 400; 
+        line-height: 32px; 
+        text-align: center;
     }
 
 }
