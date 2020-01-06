@@ -627,23 +627,27 @@
     }
 
     .actor-card-row-space {
-        margin-top: 20px;
+        margin-top: 10px;
+        padding-right: 30px;
+        padding-left: 30px;
     }
 
     .actor-card-border {
         border-right: 1.5px solid black;
-        background-color: #231f20;
     }
 
-    .actor-card .image img { 
+    .actor-card .image img {    
         width:100%;
         height: auto;
     }
 
     .actor-card {
-        border: 1px solid #ced4da;
+        border: 1.5px solid #ced4da;
         border-radius: 3px;
-        margin: 15px 0px 15px 0px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-right: 0px;
+        padding-bottom: 15px;
     }
 
     .actor-card .image {
@@ -701,8 +705,10 @@
     }
 
     .actor-card-movie {
+        border-radius: 3px;
+        border: 1.5px solid #ced4da;
+        background-color: #f2f2f1;
         margin: 15px 0px 15px 0px;
-        border: 1.5px solid black;
     }
 
     .actor-card-movie .headline{
@@ -710,7 +716,7 @@
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 24px; 
         font-weight: 400; 
-        line-height: 32px; 
+        line-height: 40px; 
         text-align: center;
     }
 
