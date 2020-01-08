@@ -10,7 +10,7 @@
     </head>
     <body>
         <div class="header-page">
-            <nav class="navbar navbar-expand-lg navbar-bg-color fixed-top">
+            <nav class="navbar navbar-expand-md navbar-light navbar-bg-color fixed-top">
                 <div class="container">
                     <!-- <a class="navbar-brand homepagefont" href="#">VIET PHIM ONLINE</a> -->
                     <a class="homepagebuttonfont" href="#">VIET PHIM ONLINE</a>
@@ -19,23 +19,23 @@
                     </button>
                     
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto ">
-                            <li class="nav-item col-md-5 text-center">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item text-center">
                                 <a class="nav-link-mod" href="index.html">Home Page <span class="sr-only">(current)</span></a>
                             </li>
-                            <li class="nav-item col-md-6 text-center"> 
+                            <li class="nav-item text-center"> 
                                 <a class="nav-link-mod" href="film-list.html">All Categories</a>
                             </li>
-                            <li class="nav-item col-md-auto text-center">
+                            <li class="nav-item text-center">
                                 <a class="nav-link-mod" href="actor-list.html">All Actors</a>
                             </li>
                         </ul>
-                        <ul class="navbar-nav">
-                            <li class="nav-item col-md-auto">
-                                <a class="nav-link-mod" href="#"><img src="icon/notifications-24px.svg" /></a>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link-mod2" href="#"><img src="icon/notifications-24px.svg" /></a>
                             </li>
                             <li class="nav-item dropdown " >
-                                <a class="nav-link-mod dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="nav-link-mod2 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Acount
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -47,7 +47,7 @@
                     </div>
                 </div>
             </nav>
-        </div>         
+        </div>                
         <div class="body-page body-bg" >
             <div class="container film-list-row-space text-center"  >
                 <div class="title">Search Movie</div>
@@ -68,33 +68,38 @@
                         <button type="button" class="btn filter-category col">Action</button>
                         <button type="button" class="btn filter-category col">Amateur </button>
                         <button type="button" class="btn filter-category col">Anthology</button>
-                        <button type="button" class="btn filter-category col">Bad boy</button>
+                        <button type="button" class="btn filter-category col dt-view">Bad boy</button>
                         <button type="button" class="btn filter-category col dt-view">Cartoon </button>
                         <button type="button" class="btn filter-category col dt-view">Comedy</button>
                     </div>
                     <div class="row">
-                        <button type="button" class="btn filter-category col">Educational</button>
+                        <button type="button" class="btn filter-category col">Educaton</button>
                         <button type="button" class="btn filter-category col">Fantasy</button>
                         <button type="button" class="btn filter-category col">Fiction</button>
-                        <button type="button" class="btn filter-category col">Heritage</button>
-                        <button type="button" class="btn filter-category col">Historical</button>
+                        <button type="button" class="btn filter-category col dt-view">Heritage</button>
+                        <button type="button" class="btn filter-category col dt-view">Historical</button>
                         <button type="button" class="btn filter-category col dt-view">Horror</button>
                     </div>
                     <div class="row">
                         <button type="button" class="btn filter-category col">Interstitial</button>
                         <button type="button" class="btn filter-category col">Japanese</button>
                         <button type="button" class="btn filter-category col">Kids</button>
-                        <button type="button" class="btn filter-category col">Korean</button>
-                        <button type="button" class="btn filter-category col">Love</button>
+                        <button type="button" class="btn filter-category col dt-view">Korean</button>
+                        <button type="button" class="btn filter-category col dt-view">Love</button>
                         <button type="button" class="btn filter-category col dt-view">Rape</button>
                     </div>
                     <div class="row">
                         <button type="button" class="btn filter-category col">Revenge</button>
                         <button type="button" class="btn filter-category col">Real time</button>
                         <button type="button" class="btn filter-category col">Reality</button>
-                        <button type="button" class="btn filter-category col">Retrospective</button>
-                        <button type="button" class="btn filter-category col">Romance</button>
+                        <button type="button" class="btn filter-category col dt-view">Retrospec</button>
+                        <button type="button" class="btn filter-category col dt-view">Romance</button>
                         <button type="button" class="btn filter-category col dt-view">Rumberas</button>
+                    </div>
+                    <div class="row">
+                        <button type="button" class="btn filter-category col mb-view">Retrospes</button>
+                        <button type="button" class="btn filter-category col mb-view">Romance</button>
+                        <button type="button" class="btn filter-category col mb-view">Rumberas</button>
                     </div>
                 </div>
             </div>
@@ -102,13 +107,12 @@
                 <div class="title">Result movies</div>
             </div>
             <div class="container film-list-row-space round-border film-list-bg-color" >
-                <div id="sortButton" class="btn-sort-row">
-                    <button type="button" class="btn btn-sort btn-sort-active">A -> Z</button>
-                    <button type="button" class="btn btn-sort">A B C D E</button>
-                    <button type="button" class="btn btn-sort">F G H I J</button>
-                    <button type="button" class="btn btn-sort">K L M N O</button>
-                    <button type="button" class="btn btn-sort">P Q R S T</button>
-                    <button type="button" class="btn btn-sort">U V W X Y</button>
+                <div id="sortButton" class="btn-sort-row ">
+                    <button type="button" class="btn btn-sort btn-sort-active">All</button>
+                    <button type="button" class="btn btn-sort">A - G</button>
+                    <button type="button" class="btn btn-sort">H - N</button>
+                    <button type="button" class="btn btn-sort">O - U</button>
+                    <button type="button" class="btn btn-sort">V - Z</button>
                 </div>
                 <hr>
                 <div class="film-list row" >
@@ -116,7 +120,7 @@
                         <div style="position: relative;">
                             <img class="img-fluid" src="image/phim1.jpg" >
                         </div>
-                        <div class="board-bottom" >Actor: Tom, Leonardo DiCaprio, Ryan Reynolds</div>
+                        <div class="board-bottom" >Actor: Tom, Leonar DiCapra, Ryan Reynolds</div>
                         <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 9.198.698</div>  
                     </div>
                     <div class="film-info col">
@@ -154,7 +158,7 @@
                         <div style="position: relative"> 
                             <img class="img-fluid" src="image/phim6.jpg" >
                         </div>
-                        <div class="board-bottom">Actor: Tom, Leonardo DiCaprio, Ryan Reynolds</div>
+                        <div class="board-bottom">Actor: Tom, Leonar DiCapra, Ryan Reynolds</div>
                         <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 6.235.698</div>  
                     </div>
                     <div class="film-info col">
@@ -192,7 +196,7 @@
                         <div style="position: relative;">
                             <img class="img-fluid" src="image/phim11.jpg" >
                         </div>
-                        <div class="board-bottom" >Actor: Tom, Leonardo DiCaprio, Ryan Reynolds</div>
+                        <div class="board-bottom" >Actor: Tom, Leonar DiCapra, Ryan Reynolds</div>
                         <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 9.198.698</div>  
                     </div>
                     <div class="film-info col">
@@ -230,7 +234,7 @@
                         <div style="position: relative"> 
                             <img class="img-fluid" src="image/phim16.jpg" >
                         </div>
-                        <div class="board-bottom">Actor: Tom, Leonardo DiCaprio, Ryan Reynolds</div>
+                        <div class="board-bottom">Actor: Tom, Leonar DiCapra, Ryan Reynolds</div>
                         <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 6.235.698</div>  
                     </div>
                     <div class="film-info col">
@@ -268,7 +272,7 @@
                         <div style="position: relative;">
                             <img class="img-fluid" src="image/phim21.jpg" >
                         </div>
-                        <div class="board-bottom" >Actor: Tom, Leonardo DiCaprio, Ryan Reynolds</div>
+                        <div class="board-bottom" >Actor: Tom, Leonar DiCapra, Ryan Reynolds</div>
                         <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 9.198.698</div>  
                     </div>
                     <div class="film-info col">
@@ -306,7 +310,7 @@
                         <div style="position: relative"> 
                             <img class="img-fluid" src="image/phim26.jpg" >
                         </div>
-                        <div class="board-bottom">Actor: Tom, Leonardo DiCaprio, Ryan Reynolds</div>
+                        <div class="board-bottom">Actor: Tom, Leonar DiCapra, Ryan Reynolds</div>
                         <div class="board-top" ><img src="icon/remove_red_eye-24px-2.svg" style="padding-bottom:4px"/> 6.235.698</div>  
                     </div>
                     <div class="film-info col">
@@ -369,17 +373,17 @@
                  // Get the container element
                  var btnContainer = document.getElementById("sortButton");
 
-// Get all buttons with class="btn" inside the container
-var btns = btnContainer.getElementsByClassName("btn");
+                // Get all buttons with class="btn" inside the container
+                var btns = btnContainer.getElementsByClassName("btn");
 
-// Loop through the buttons and add the active class to the current/clicked button
-for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function() {
-        var current = document.getElementsByClassName("btn-sort-active");
-        current[0].className = current[0].className.replace(" btn-sort-active", "");
-        this.className += " btn-sort-active";
-    });
-}
+                // Loop through the buttons and add the active class to the current/clicked button
+                for (var i = 0; i < btns.length; i++) {
+                    btns[i].addEventListener("click", function() {
+                        var current = document.getElementsByClassName("btn-sort-active");
+                        current[0].className = current[0].className.replace(" btn-sort-active", "");
+                        this.className += " btn-sort-active";
+                    });
+                }
             })
         </script>
 

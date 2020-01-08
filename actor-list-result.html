@@ -10,7 +10,7 @@
     </head>
     <body>
         <div class="header-page">
-            <nav class="navbar navbar-expand-lg navbar-bg-color fixed-top">
+            <nav class="navbar navbar-expand-md navbar-light navbar-bg-color fixed-top">
                 <div class="container">
                     <!-- <a class="navbar-brand homepagefont" href="#">VIET PHIM ONLINE</a> -->
                     <a class="homepagebuttonfont" href="#">VIET PHIM ONLINE</a>
@@ -19,23 +19,23 @@
                     </button>
                     
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto ">
-                            <li class="nav-item col-md-5 text-center">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item text-center">
                                 <a class="nav-link-mod" href="index.html">Home Page <span class="sr-only">(current)</span></a>
                             </li>
-                            <li class="nav-item col-md-6 text-center"> 
+                            <li class="nav-item text-center"> 
                                 <a class="nav-link-mod" href="film-list.html">All Categories</a>
                             </li>
-                            <li class="nav-item col-md-auto text-center">
+                            <li class="nav-item text-center">
                                 <a class="nav-link-mod" href="actor-list.html">All Actors</a>
                             </li>
                         </ul>
-                        <ul class="navbar-nav">
-                            <li class="nav-item col-md-auto">
-                                <a class="nav-link-mod" href="#"><img src="icon/notifications-24px.svg" /></a>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link-mod2" href="#"><img src="icon/notifications-24px.svg" /></a>
                             </li>
                             <li class="nav-item dropdown " >
-                                <a class="nav-link-mod dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="nav-link-mod2 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Acount
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -43,12 +43,11 @@
                                 <a class="dropdown-item" href="#">Log out</a>
                                 </div>
                             </li>
-                           
                         </ul>
                     </div>
                 </div>
             </nav>
-        </div>       
+        </div>             
         <div class="body-page body-bg" >
             <div class="container film-list-row-space text-center"  >
                 <div class="title">Search Actor</div>
@@ -72,7 +71,7 @@
                         <button type="button" class="btn filter-category col">Albania</button>
                         <button type="button" class="btn filter-category col">America </button>
                         <button type="button" class="btn filter-category col">Austria</button>
-                        <button type="button" class="btn filter-category col">Belarus</button>
+                        <button type="button" class="btn filter-category col dt-view">Belarus</button>
                         <button type="button" class="btn filter-category col dt-view">Bhutan </button>
                         <button type="button" class="btn filter-category col dt-view">Brazil</button>
                     </div>
@@ -80,7 +79,7 @@
                         <button type="button" class="btn filter-category col">Burundi</button>
                         <button type="button" class="btn filter-category col">Chile</button>
                         <button type="button" class="btn filter-category col">Croatia</button>
-                        <button type="button" class="btn filter-category col">Denmark</button>
+                        <button type="button" class="btn filter-category col dt-view">Denmark</button>
                         <button type="button" class="btn filter-category col dt-view">Egypt</button>
                         <button type="button" class="btn filter-category col dt-view">Ethiopia</button>
                     </div>
@@ -88,7 +87,7 @@
                         <button type="button" class="btn filter-category col">Germany</button>
                         <button type="button" class="btn filter-category col">Grenada</button>
                         <button type="button" class="btn filter-category col">Iceland</button>
-                        <button type="button" class="btn filter-category col">Italy</button>
+                        <button type="button" class="btn filter-category col dt-view">Italy</button>
                         <button type="button" class="btn filter-category col dt-view">Kenya</button>
                         <button type="button" class="btn filter-category col dt-view">Liberia</button>
                     </div>
@@ -96,7 +95,7 @@
                         <button type="button" class="btn filter-category col">Nepal</button>
                         <button type="button" class="btn filter-category col">Panama</button>
                         <button type="button" class="btn filter-category col">Samoa</button>
-                        <button type="button" class="btn filter-category col">Serbia</button>
+                        <button type="button" class="btn filter-category col dt-view">Serbia</button>
                         <button type="button" class="btn filter-category col dt-view">Syria</button>
                         <button type="button" class="btn filter-category col dt-view">Vietnam</button>
                     </div>
@@ -106,13 +105,12 @@
                 <div class="title">Result actors</div>
             </div>
             <div class="container film-list-row-space round-border film-list-bg-color" >
-                <div id="sortButton" class="btn-sort-row">
-                    <button type="button" class="btn btn-sort btn-sort-active">A -> Z</button>
-                    <button type="button" class="btn btn-sort">A B C D E</button>
-                    <button type="button" class="btn btn-sort">F G H I J</button>
-                    <button type="button" class="btn btn-sort">K L M N O</button>
-                    <button type="button" class="btn btn-sort">P Q R S T</button>
-                    <button type="button" class="btn btn-sort">U V W X Y</button>
+                <div id="sortButton" class="btn-sort-row ">
+                    <button type="button" class="btn btn-sort btn-sort-active">All</button>
+                    <button type="button" class="btn btn-sort">A - G</button>
+                    <button type="button" class="btn btn-sort">H - N</button>
+                    <button type="button" class="btn btn-sort">O - U</button>
+                    <button type="button" class="btn btn-sort">V - Z</button>
                 </div>
                 <hr>
                 <div class="film-list row" >
@@ -120,7 +118,7 @@
                         <div style="position: relative;" type="button" onclick="location.href='film-info.html'"> 
                             <img class="img-fluid" src="image/dienvien11.jpg" >
                         </div>
-                        <div class="board-top" >Leonardo DiCaprio</div>  
+                        <div class="board-top" >Leonar DiCapra</div>  
                     </div>
                     <div class="film-info col">
                         <div style="position: relative;" type="button" onclick="location.href='film-info-2.html'"> 
@@ -186,7 +184,7 @@
                         <div style="position: relative;" type="button" onclick="location.href='film-info.html'"> 
                             <img class="img-fluid" src="image/dienvien1.jpg" >
                         </div>
-                        <div class="board-top" >Leonardo DiCaprio</div>  
+                        <div class="board-top" >Leonar DiCapra</div>  
                     </div>
                     <div class="film-info col">
                         <div style="position: relative;" type="button" onclick="location.href='film-info-2.html'"> 
@@ -265,6 +263,28 @@
                             $(this).addClass('filter-category-active');
                         }
                     });
+                    $('.img-fluid').mouseenter(function()
+                    {
+                        $(this).parent().parent().children('.board-bottom').show();
+                    });
+                    $('.img-fluid').mouseleave(function()
+                    { 
+                        $(this).parent().parent().children('.board-bottom').hide();
+                    }); 
+                     // Get the container element
+                     var btnContainer = document.getElementById("sortButton");
+    
+                    // Get all buttons with class="btn" inside the container
+                    var btns = btnContainer.getElementsByClassName("btn");
+    
+                    // Loop through the buttons and add the active class to the current/clicked button
+                    for (var i = 0; i < btns.length; i++) {
+                        btns[i].addEventListener("click", function() {
+                            var current = document.getElementsByClassName("btn-sort-active");
+                            current[0].className = current[0].className.replace(" btn-sort-active", "");
+                            this.className += " btn-sort-active";
+                        });
+                    }
                 })
             </script>
     
