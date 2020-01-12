@@ -1,0 +1,123 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+ul,li{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+/* .background-body{
+    background: #393838;
+} */
+.top-head {
+    background: #2B2929;
+    overflow: hidden;
+}
+.top-left{
+    float: left;
+    /* margin-right: 100px; */
+}
+.top-left ul li{
+    /* text-decoration: none; */
+    display: inline-block;
+    margin-right: 40px;
+}
+.top-left ul li a{
+    color: #BFBFBF;
+    font-size: 20px;
+    line-height: 35px;
+    text-decoration: none;
+}
+.top-left ul li a :hover{
+    color: #FFE600;
+}
+.top-right {
+    float: right;
+}
+.top-right span a {
+    color: #BFBFBF;
+    line-height: 35px;
+    margin-right: 15px;
+}
+.top-right span a :hover {
+    color: #FFE600;
+}
+.head-center-top-left {
+    padding-top: 200px;
+}
+.head-center-top-right {
+    padding-top: 162px;
+}
+.head-center-top-left ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color:#FFFFFF;
+}
+.head-center-top-left ul li a:hover {
+    color: #FF7F27;
+}
+.head-center-top-left ul {
+    border-right: #BFBFBF solid 3px;
+    /* padding: 10px; */
+}
+.head-center-top-right ul li a {
+    text-decoration: none;
+    font-size: 20px;    
+    /* color:#FFFFFF; */
+    color: #FFE600;
+    margin-right: 10px;
+}
+.head-center-top-right ul {
+    /* border-right: #BFBFBF solid 3px; */
+    /* padding: 10px; */
+}
+.head-center-top-right ul li a i{
+    color: #FFE600;
+    margin-right: 10px;
+}
+.head-center-top-right ul li a span{
+    /* color:#FFFFFF; */
+    color: #BFBFBF;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+.head-center-device-management-top-right {
+    padding-top: 162px;
+}
+.head-center-device-management-top-right ul li a {
+    text-decoration: none;
+    font-size: 20px;    
+    /* color:#FFFFFF; */
+    color: #FFE600;
+    margin-right: 10px;
+}
+.head-center-device-management-top-right ul {
+    /* border-right: #BFBFBF solid 3px; */
+    /* padding: 10px; */
+}
+.head-center-device-management-top-right ul li a i{
+    color: #FFE600;
+    margin-right: 10px;
+}
+.head-center-device-management-top-right ul li a span{
+    /* color:#FFFFFF; */
+    color: #BFBFBF;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+/* .android{
+    color: #7AD226;
+}
+.opera{
+    color: #CA2921;
+} */
+
